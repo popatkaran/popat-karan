@@ -1,0 +1,175 @@
+{
+    "slug": "popatkaran",
+    "name": "Karan Popat",
+    "subTitle": "E-comemrce Architect | Lead Software Engineer",
+    "email": "krn.ppt@gmail.com",
+    "location": "Berlin, Germany",
+    "contact": [
+      "+49-152-54907314"
+    ],
+    "website": [
+      "https://popatkaran.wordpress.com/"
+    ],
+    "professionalSummary": "Experienced Ecommerce Tech Architect with a strong background in PHP and GoLang, offering over 10 years of expertise. Demonstrates a deep passion for software engineering and a particular focus on e-commerce webshop development using popular frameworks such as Magento and Spryker. Exhibits a keen interest in acquiring knowledge and adopting new e-commerce frameworks. Skilled in utilizing GoLang to create efficient microservices that meet business needs. Committed to employing test and behavior-driven development methodologies, with proficiency in Scrum and Lean Kanban methodologies.",
+    "skill_badges":["Team management and leadership", "e-commerce architecture", "Spryker", "Adobe Commerce", "SAP Commerce", "CommerceTools", "PHP", "PHPUnit", "PHPSpec", "Behat", "gomock", "sqlmock", "jQuery", "KnockoutJs", "React", "Java", "Kafka", "RabbitMQ", "GoLang"],
+    "skills": [
+      {
+        "title": "Soft Skills",
+        "items": [
+          "Team management and leadership",
+          "Communication with clients, team, and across projects",
+          "Requirement gathering, analysis & project estimation",
+          "Provide structured training to developers",
+          "Defining practices within the team (code of conduct) for various things like definition of done, structure of project documentation, test suites, support run books, etc."
+        ]
+      },
+      {
+        "title": "Tech Skills",
+        "items": [
+          "PHP",
+          "Golang",
+          "E-Commerce frameworks: Spryker, Magento 1 & 2",
+          "Testing frameworks: PHPUnit, PHPSpec, Behat, gomock, sqlmock",
+          "Javascript frameworks & libraries: jQuery, KnockoutJs, React (beginner)",
+          "Tools: Postman, Jira, Git, Slack, Trello, Pivotal Tracker",
+          "Event streaming & message queue: Kafka, RabbitMQ"
+        ]
+      }
+    ],
+    "workday": {
+      "title": "How do I spend my day at work?",
+      "duties": [
+        "Code reviews: every morning I mostly spend some time doing the code reviews and providing constructive feedback.",
+        "Agile ceremonies: dailies and weeklies, talking with the team to find out how the sprint is progressing, whether there are any blockers or someone needs help. Assess the overall situation and possible risks. Talking with POs and analysts to define the next set of work.",
+        "Pairing sessions: lots of them with different teammates for doing code reviews together, helping them solve bugs or providing support for development of complex tasks.",
+        "Development: I like to spend some time doing code on my own for complex tasks or tricky issues. Normally I work on tasks which define the processes or tools which help the team to do their work efficiently. For example, integration of a new test framework, integration of Kafka with the project, adding a profiling tool to project setup, etc.",
+        "Extra activities: Tech interviews, participate in RFP proposals to provide technical solutions based on Spryker, "
+      ]
+    },
+    "experience": {
+      "title": "Experiences",
+      "companies": [
+        {
+          "company": "Accenture Song",
+          "role":"Lead Software Engineer & Associate Architect",
+          "duration": "Septmber 2021 - till date",
+          "duties": [
+            "Provide training on Spryker to Backend developers",
+            "Provide support to solution/technical architects to provide e-commerce solutions",
+            "Provide support to the Business Development team to analyze e-commerce opportunities",
+            "Develop and customize e-commerce webshops using Spryker(PHP)",
+            "Analyse requirements and create technical tasks",
+            "Implement features to meet client requirements to develop an e-commerce store",
+            "Provide quality code by writing unit, integration, and acceptance tests",
+            "Participate in internal & external ceremonies"
+          ]
+        },
+        {
+          "company": "Inviqa Gmbh",
+          "role":"Senior Software Engineer",
+          "duration": "December 2018 - August 2021",
+          "duties": [
+            "Develop and customize e-commerce webshops using Spryker(PHP)",
+            "Implement microservices using Golang",
+            "Analyse requirements and create technical tasks",
+            "Implement features to meet client requirements to develop an e-commerce store",
+            "Provide quality code by writing unit, integration, and acceptance tests",
+            "Participate in internal & external ceremonies",
+            "Requirement gathering and task creation if needed"
+          ]
+        },
+        {
+          "company": "Krish Technolabs",
+          "role":"Senior Software Engineer",
+          "duration": "March 2015 - November 2018",
+          "duties": [
+            "Php backend developer (Magento, Magento 2)",
+            "Communicate with the client regarding project requirements and work accordingly for them",
+            "Provide a solution for the web store",
+            "Innovate new ideas to make a webshop user-friendly",
+            "Magento extension development",
+            "Magento third-party extension integration and modification"
+          ]
+        },
+        {
+          "company": "Tatvasoft",
+          "role":"Software Engineer",
+          "duration": "June 2013 - March 2015",
+          "duties": [
+            "Worked on various e-commerce features based on Magento 1 as a backend developer",
+            "Developed CMS webshops based on Drupal as a backend developer"
+          ]
+        }
+      ]
+    },
+    "portfolio": {
+      "title": "Recent Projects",
+      "projects": [
+        {
+          "project": "Healthcare products brand - Spryker",
+          "duties": [
+            "Implementation of third party ERP to perform various operations like fetching price, checking availability during checkout process",
+            "Development of custom discount rules in Spryker to fullfill business requirement",
+            "Implementation of JWT token based login for customer in Spryker shop",
+            "Development of custom API endpoints to fulfill business logic"
+          ]
+        },
+        {
+          "project": "Online pharmacy project - Spryker",
+          "duties": [
+            "Implementation of multi-store multilingual webshop using microservice architecture",
+            "Added custom API endpoints to be consumed from different services",
+            "Worked on GO microservices for various features",
+            "Custom reports generation for customer, products, sales, etc. along with AWS and Google drive upload",
+            "Implemented Kafka based event message system to manage async data flow",
+            "Took part in deployment process using CI/CD pipelines managed by docker and Kubernetes",
+            "Involvement in requirement gathering for features defined by client in Jira using scrum kanban methodology"
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "degrees": [
+        {
+          "degree": "B.Tech - Computer Science",
+          "grades": "7.77 CGPA",
+          "institution": "Gujarat Technological University",
+          "duration": "2009-2013"
+        }
+      ]
+    },
+    "avatar": "../images/general/logo-dark.png",
+    "certifications": [
+      {
+        "title": "Spryker Certified Foundations Developer",
+        "url": "https://www.credential.net/67a303de-eca1-46a7-9a29-be6426793f05#gs.yvm3ul"
+      },
+      {
+        "title": "Adobe Certified Professional - Adobe Commerce Developer",
+        "url": "https://www.credly.com/badges/bbaafb9e-d8af-4654-b5b2-14d34d4c6b7d/linked_in_profile"
+      },
+      {
+        "title": "SAP Commerce Cloud",
+        "url": "https://www.credly.com/badges/f00b6340-8cb3-4fb1-ba03-40c470817259/public_url"
+      },
+      {
+        "title": "AWS Cloud Practitioner",
+        "url": "https://www.credly.com/badges/9560176f-71c9-4c01-822d-2f676cf90a9d/linked_in_profile"
+      }
+    ],
+    "links": [
+      {
+        "title": "Facebook",
+        "url": "https://www.facebook.com/karanpopat1992"
+      },
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/karanpopat1992"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://www.github.com/popatkaran"
+      }
+    ]
+  }

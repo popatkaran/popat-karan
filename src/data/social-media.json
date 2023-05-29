@@ -1,0 +1,26 @@
+[
+  {
+    "platform": {
+      "name": "facebook",
+      "profile_url": "https://www.facebook.com/karan-popat/",
+      "page_url": "https://www.facebook.com/pages/karan-popat/",
+      "icon": "images/general/facebook.svg"
+    }
+  },
+  {
+    "platform": {
+      "name": "instagram",
+      "profile_url": "https://www.instagram.com/karan-popat/",
+      "page_url": null,
+      "icon": "images/general/instagram.svg"
+    }
+  },
+  {
+    "platform": {
+      "name": "twitter",
+      "profile_url": "https://www.twitter.com/karan-popat/",
+      "page_url": null,
+      "icon": "images/general/twitter.svg"
+    }
+  }
+]

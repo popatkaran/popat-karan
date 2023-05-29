@@ -1,0 +1,89 @@
+---
+slug: '/notes/netflix-type-code'
+date: '2019-05-04'
+title: 'Netflix Type Code'
+category: 'Entertainment'
+type: 'personal'
+order: 6
+---
+
+- Action Thrillers – 43048
+- Classic Thrillers – 46588
+- Crime Thrillers – 10499
+- Gangster Movies – 31851
+- Independent Thrillers – 3269
+- Mysteries – 9994
+- Political Thrillers – 10504
+- Psychological Thrillers – 5505
+- Sci-Fi Thrillers – 11014
+- Spy Thrillers – 9147
+- Steamy Thrillers – 972
+- Supernatural Thrillers – 11140
+- British TV Shows – 52117
+- Classic TV Shows – 46553
+- Crime TV Shows – 26146
+- Cult TV Shows – 74652
+- Food & Travel TV – 72436
+- Kids’ TV – 27346
+- Korean TV Shows – 67879
+- Military TV Shows – 25804
+- Miniseries – 4814
+- Reality TV – 9833
+- Science & Nature TV – 52780
+- Teen TV Shows – 60951
+- TV Action & Adventure – 10673
+- TV Comedies – 10375
+- TV Documentaries – 10105
+- TV Dramas – 11714
+- TV Horror – 83059
+- TV Mysteries – 4366
+- TV Sci-Fi & Fantasy – 1372
+- Action Comedies – 43040
+- Action Thrillers – 43048
+- Adventures – 7442
+- Classic Action & Adventure – 46576
+- Comic Book and Superhero Movies – 10118
+- Crime Action & Adventure – 9584
+- Martial Arts Movies – 8985
+- Military Action & Adventure – 2125
+- Westerns – 7700
+- Spy Action & Adventure – 10702
+- Classic Comedies – 31694
+- Classic Dramas – 29809
+- Classic Sci-Fi & Fantasy – 47147
+- Classic Thrillers – 46588
+- Classic War Movies – 48744
+- Classic Westerns – 47465
+- Epics – 52858
+- Film Noir – 7687
+- Silent Movies – 53310
+- Biographical Documentaries – 3652
+- Crime Documentaries – 9875
+- Foreign Documentaries – 5161
+- Historical Documentaries – 5349
+- Military Documentaries – 4006
+- Music & Concert Documentaries – 90361
+- Political Documentaries – 7018
+- Spiritual Documentaries – 2760
+- Science & Nature Documentaries – 2595
+- Social & Cultural Documentaries – 3675
+- Sports Documentaries – 180
+- Travel & Adventure Documentaries – 1159
+- Biographical Dramas – 3179
+- Classic Dramas – 29809
+- Courtroom Dramas – 2748
+- Crime Dramas – 6889
+- Dramas based on Books – 4961
+- Dramas based on real life – 3653
+- Foreign Dramas – 2150
+- LGBTQ Dramas – 500
+- Independent Dramas – 384
+- Military Dramas – 11
+- Period Pieces – 12123
+- Political Dramas – 6616
+- Romantic Dramas – 1255
+- Showbiz Dramas – 5012
+- Social Issue Dramas – 3947
+- Sports Dramas – 7243
+- Tearjerkers – 6384
+- Teen Dramas – 9299

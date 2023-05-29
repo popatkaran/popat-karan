@@ -1,0 +1,35 @@
+.card {
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 5px 20px;
+  border: 0;
+  margin-top: var(--margin-single);
+  margin-bottom: var(--margin-single);
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 8px;
+}
+
+.card-body {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 15vh;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  margin-top: var(--margin-single);
+  margin-bottom: var(--margin-single);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-h1);
+}
+
+.credential-badge {
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  padding: var(--padding-double);
+}

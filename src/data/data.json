@@ -1,0 +1,188 @@
+{
+  "config":{
+    "hero_banner":{
+      "display":false,
+      "url":""
+    },
+    "resume":{
+      "allow_download":true,
+      "url":"https://raw.githubusercontent.com/popatkaran/assets/c4a5168108ee0b0511b4e33d06674291489ff18a/karan-popat.pdf"
+    },
+    "home_intro":{
+      "display":true,
+      "bg_color":""
+    },
+    "home_services":{
+      "display":true,
+      "bg_color":""
+    },
+    "home_certifications":{
+      "display":true,
+      "bg_color":""
+    },
+    "home_platforms":{
+      "display":true,
+      "bg_color":""
+    },
+    "image_logo":{
+      "display":true
+    },
+    "text_logo":{
+      "display":true
+    },
+    "social_media":{
+      "display":true
+    },
+    "footer_links":{
+      "display":true
+    },
+    "copyright":{
+      "display":true
+    }
+  },
+  "info":{
+    "name":"Karan Popat",
+    "role":" Technologist | e - Commerce Architect | Engineering Manager ",
+    "tagline":"This is tagline placeholder.",
+    "short_description":"I help my clients to thrive in their digital business by providing best-in-class solutions.",
+    "description":"Donec lobortis volutpat feugiat. Sed finibus nunc gravida, posuere lorem a, rutrum ex. Aenean rhoncus nunc nec neque placerat, in venenatis diam vestibulum. Nunc id tristique odio. In augue ipsum, feugiat a sapien et, varius luctus arcu. Donec rutrum ut tellus tincidunt suscipit. Donec tempor a nunc in sollicitudin. Donec faucibus purus est, eu blandit velit finibus ut. Praesent a sagittis dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla at orci nec leo mollis mattis. Cras faucibus dui sit amet purus molestie, maximus rhoncus ex semper. Quisque justo nunc, bibendum sit amet dignissim a, ullamcorper eget neque. Proin et leo sit amet elit maximus ultrices.",
+    "email":"krn.ppt@gmail.com",
+    "phone":"+49-152-54907314",
+    "website":"vishvapujara.com"
+  },
+  "services":[
+    {
+      "picture":"http://placehold.it/32x32",
+      "title":"Architecting Scalable Ecommerce Solutions",
+      "description":"With expertise in designing and developing scalable ecommerce architectures, I create robust systems capable of handling high traffic volumes and accommodating future growth. By carefully selecting the most suitable technologies and implementing industry best practices for performance optimization, security, and reliability, I ensure that your ecommerce platform meets the demands of your business."
+    },
+    {
+      "isActive":true,
+      "picture":"http://placehold.it/32x32",
+      "title":"Seamless Integration of Third-Party Systems and Services",
+      "description":"Leveraging my proficiency in integrating third-party systems and services, I seamlessly connect various components of your ecommerce platform. From payment gateways and shipping providers to inventory management systems and CRM tools, I ensure smooth data flow and efficient communication between all systems. This integration enhances the overall shopping experience for your customers, providing a seamless and hassle-free journey."
+    },
+    {
+      "picture":"http://placehold.it/32x32",
+      "title":"Enhancing User Experience",
+      "description":"Collaborating closely with designers and UX experts, I work towards enhancing the overall user experience on your ecommerce platform. By analyzing user behavior, conducting A/B testing, and leveraging data-driven insights, I identify opportunities to optimize conversion rates, reduce cart abandonment, and create an intuitive interface. Through meticulous implementation and continuous improvement, I ensure that your customers enjoy a user-friendly and engaging ecommerce experience."
+    },
+    {
+      "picture":"http://placehold.it/32x32",
+      "title":"Team Leadership and Development",
+      "description":"As a dedicated leader, I excel at managing and developing software engineering teams. I set clear goals, provide regular feedback, and foster a collaborative and inclusive work environment. By identifying opportunities for skill development and growth, aligning individual strengths with project requirements, and empowering the team, I ensure high performance and professional excellence in delivering ecommerce projects."
+    },
+    {
+      "picture":"http://placehold.it/32x32",
+      "title":"Project Planning and Execution",
+      "description":"With my role as an Engineering Manager, I oversee the planning, execution, and delivery of ecommerce projects. I work closely with product managers, designers, and stakeholders to define project scope, timelines, and resource allocation. I prioritize on-time delivery, adherence to budget constraints, and meeting quality standards. Through effective risk management, dependency handling, and informed decision-making, I optimize project outcomes."
+    },
+    {
+      "picture":"http://placehold.it/32x32",
+      "title":"Technical Strategy and Innovation",
+      "description":"I actively contribute to the technical strategy and roadmap of your ecommerce platform. By staying up to date with the latest industry trends and emerging technologies, I identify opportunities for innovation and improvement. Collaborating with architects and technical leads, I evaluate new tools, frameworks, and methodologies that enhance the platform's capabilities. My focus on driving technical excellence ensures scalability and maintainability of the system to meet the evolving needs of your business."
+    }
+  ],
+  "certifications":[
+    {
+      "picture":"https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/23531734",
+      "title":"Spryker Certified Foundations Developer",
+      "link":"https://www.credential.net/67a303de-eca1-46a7-9a29-be6426793f05",
+      "description":"Enim consequat veniam consectetur excepteur aute nulla ex commodo id minim. Ea nostrud incididunt ullamco irure proident ad duis. Magna sit irure irure cillum eu sint. Ea non adipisicing ut labore incididunt consectetur eu elit irure tempor voluptate reprehenderit."
+    },
+    {
+      "picture":"https://images.credly.com/size/340x340/images/48e73336-c91d-477f-a66f-3ad950acb597/Adobe_Certified_Professional_Experience_Cloud_products_Digital_Badge.png",
+      "title":"Adobe Certified Professional—Adobe Commerce Developer",
+      "link":"https://www.credly.com/badges/bbaafb9e-d8af-4654-b5b2-14d34d4c6b7d",
+      "description":"Earners of this credential are developers who are beginning their career as a Adobe Commerce Developer and have the skills and knowledge of Magento 2 in the areas of UI modifications, database changes, admin modifications, customizations, catalog and checkout structure, and functionality changes."
+    },
+    {
+      "picture":"https://images.credly.com/size/340x340/images/7b357876-2835-4dcf-a5b7-cc21d9e608ff/image.png",
+      "title":"Technical Essentials of SAP Commerce Cloud",
+      "link":"https://www.credly.com/badges/f00b6340-8cb3-4fb1-ba03-40c470817259",
+      "description":"This Record of Achievement validates that the candidate has successfully completed the Learning Journey on Foundational Level for developers and consultants. The earner understands the fundamental technical aspects of SAP Commerce Cloud and is able to provide configuration into SAP Commerce Cloud. The candidate is also able to develop and customize the basic modules of SAP Commerce Cloud."
+    },
+    {
+      "picture":"https://images.credly.com/size/340x340/images/2784d0d8-327c-406f-971e-9f0e15097003/image.png",
+      "title":"AWS Cloud Quest: Cloud Practitioner",
+      "link":"https://www.credly.com/badges/9560176f-71c9-4c01-822d-2f676cf90a9d",
+      "description":"Earners of this badge have demonstrated basic solution building knowledge using AWS services and have a fundamental understanding of AWS Cloud concepts. Badge earners have acquired hands-on experience with compute, networking, database and security services."
+    }
+  ],
+  "platforms":[
+    {
+      "picture":"https://raw.githubusercontent.com/popatkaran/assets/main/spryker.png",
+      "title":"Spryker",
+      "link":"https://www.credential.net/67a303de-eca1-46a7-9a29-be6426793f05",
+      "description":"Enim consequat veniam consectetur excepteur aute nulla ex commodo id minim. Ea nostrud incididunt ullamco irure proident ad duis. Magna sit irure irure cillum eu sint. Ea non adipisicing ut labore incididunt consectetur eu elit irure tempor voluptate reprehenderit."
+    },
+    {
+      "picture":"https://raw.githubusercontent.com/popatkaran/assets/main/adobe-commerce.png",
+      "title":"Adobe Commerce (Magento)",
+      "link":"https://www.credly.com/badges/bbaafb9e-d8af-4654-b5b2-14d34d4c6b7d",
+      "description":"Earners of this credential are developers who are beginning their career as a Adobe Commerce Developer and have the skills and knowledge of Magento 2 in the areas of UI modifications, database changes, admin modifications, customizations, catalog and checkout structure, and functionality changes."
+    },
+    {
+      "picture":"https://raw.githubusercontent.com/popatkaran/assets/main/commercetools.png",
+      "title":"Commerce Tools",
+      "link":"https://www.credly.com/badges/f00b6340-8cb3-4fb1-ba03-40c470817259",
+      "description":"This Record of Achievement validates that the candidate has successfully completed the Learning Journey on Foundational Level for developers and consultants. The earner understands the fundamental technical aspects of SAP Commerce Cloud and is able to provide configuration into SAP Commerce Cloud. The candidate is also able to develop and customize the basic modules of SAP Commerce Cloud."
+    },
+    {
+      "picture":"https://raw.githubusercontent.com/popatkaran/assets/main/sap-hybris.png",
+      "title":"SAP Hybris",
+      "link":"https://www.credly.com/badges/9560176f-71c9-4c01-822d-2f676cf90a9d",
+      "description":"Earners of this badge have demonstrated basic solution building knowledge using AWS services and have a fundamental understanding of AWS Cloud concepts. Badge earners have acquired hands-on experience with compute, networking, database and security services."
+    }
+  ],
+  "menu":[
+    {
+      "title":"Home",
+      "url":"/"
+    },
+    {
+      "title":"About",
+      "url":"/about"
+    },
+    {
+      "title":"Contact",
+      "url":"/contact"
+    }
+  ],
+  "socialmedia":[
+    {
+      "title":"linkedin",
+      "url":"https://www.facebook.com/karanpopat/"
+    },
+    {
+      "title":"GitHub",
+      "url":"https://www.github.com/popatkaran/"
+    },
+    {
+      "title":"Facebook",
+      "url":"https://www.facebook.com/karanpopat1992/"
+    },
+    {
+      "title":"Instagram",
+      "url":"https://www.instagram.com/karanpopat1992/"
+    },
+    {
+      "title":"twitter",
+      "url":"https://twitter.com/KaranPopat/"
+    }
+  ],
+  "footerlinks":[
+    {
+      "title":"Home",
+      "url":"/"
+    },
+    {
+      "title":"About",
+      "url":"/about"
+    },
+    {
+      "title":"Contact",
+      "url":"/contact"
+    }
+  ]
+}

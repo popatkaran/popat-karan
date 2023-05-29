@@ -1,0 +1,44 @@
+#page-prayer {
+    min-height: 100vh;
+    margin-top: var(--margin-headbar);
+    position: relative;
+}
+
+.hanumanchalisa {}
+
+#page-prayer .card {
+    box-shadow: none;
+}
+
+#page-prayer .card-body {
+    /* display: block; */
+    margin-top: var(--margin-big);
+    margin-bottom: var(--margin-big);
+}
+
+/* .carousel-control-next, .carousel-control-prev {
+    bottom: 50%;
+    top: 0;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-image: none;
+    background-color: var(--cyan);
+} */
+
+#page-prayer .carousel-caption {
+    color: var(--color);
+}
+
+.carousel-item {
+    transition: transform 2s ease, opacity .5s ease-out;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.hanumanchalisa .credential-badge {
+    padding: 0;
+}

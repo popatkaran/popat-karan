@@ -1,0 +1,33 @@
+[
+  {
+    "picture": "http://placehold.it/32x32",
+    "title": "Architecting Scalable Ecommerce Solutions",
+    "description": "With expertise in designing and developing scalable ecommerce architectures, I create robust systems capable of handling high traffic volumes and accommodating future growth. By carefully selecting the most suitable technologies and implementing industry best practices for performance optimization, security, and reliability, I ensure that your ecommerce platform meets the demands of your business."
+  },
+  {
+    "isActive": true,
+    "picture": "http://placehold.it/32x32",
+    "title": "Seamless Integration of Third-Party Systems and Services",
+    "description": "Leveraging my proficiency in integrating third-party systems and services, I seamlessly connect various components of your ecommerce platform. From payment gateways and shipping providers to inventory management systems and CRM tools, I ensure smooth data flow and efficient communication between all systems. This integration enhances the overall shopping experience for your customers, providing a seamless and hassle-free journey."
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "title": "Enhancing User Experience",
+    "description": "Collaborating closely with designers and UX experts, I work towards enhancing the overall user experience on your ecommerce platform. By analyzing user behavior, conducting A/B testing, and leveraging data-driven insights, I identify opportunities to optimize conversion rates, reduce cart abandonment, and create an intuitive interface. Through meticulous implementation and continuous improvement, I ensure that your customers enjoy a user-friendly and engaging ecommerce experience."
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "title": "Team Leadership and Development",
+    "description": "As a dedicated leader, I excel at managing and developing software engineering teams. I set clear goals, provide regular feedback, and foster a collaborative and inclusive work environment. By identifying opportunities for skill development and growth, aligning individual strengths with project requirements, and empowering the team, I ensure high performance and professional excellence in delivering ecommerce projects."
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "title": "Project Planning and Execution",
+    "description": "With my role as an Engineering Manager, I oversee the planning, execution, and delivery of ecommerce projects. I work closely with product managers, designers, and stakeholders to define project scope, timelines, and resource allocation. I prioritize on-time delivery, adherence to budget constraints, and meeting quality standards. Through effective risk management, dependency handling, and informed decision-making, I optimize project outcomes."
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "title": "Technical Strategy and Innovation",
+    "description": "I actively contribute to the technical strategy and roadmap of your ecommerce platform. By staying up to date with the latest industry trends and emerging technologies, I identify opportunities for innovation and improvement. Collaborating with architects and technical leads, I evaluate new tools, frameworks, and methodologies that enhance the platform's capabilities. My focus on driving technical excellence ensures scalability and maintainability of the system to meet the evolving needs of your business."
+  }
+]

@@ -1,0 +1,60 @@
+.offcanvas.offcanvas-end {
+    width: 50vw;
+    border-left: none;
+}
+
+.offcanvas {
+    transition: transform .4s ease-in-out;
+    background-color: var(--background);
+}
+
+.offcanvas-header {
+    justify-content: flex-end;
+}
+
+.offcanvas-title {
+    text-transform: uppercase;
+    font-weight: var(--font-weight-h1);
+    margin: var(--margin-double);
+    padding-top: var(--padding-double);
+    padding-bottom: var(--padding-double);
+}
+
+.offcanvas-body {
+    text-align: center;
+}
+
+.navbar {
+    background: var(--background);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color: var(--color);
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: var(--cyan);
+}
+
+.navbar-brand {
+    font-weight: var(--font-weight-h1);
+    text-transform: uppercase;
+    margin-left: var(--margin-single);
+    margin-right: var(--margin-single);
+    color: var(--color);
+}
+
+.offcanvas-header .btn-close {
+    margin-right: var(--margin-single);
+}

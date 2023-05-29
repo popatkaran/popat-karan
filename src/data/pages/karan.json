@@ -1,0 +1,168 @@
+{
+  "slug": "popatkaran",
+  "name": "Karan Popat",
+  "subTitle": "Php & Go Backend Developer | Magento 2 and Spryker certified Backend Developer",
+  "email": "krn.ppt@gmail.com",
+  "contact": [
+    "+49-152-54907314"
+  ],
+  "website": [
+    "https://popatkaran.wordpress.com/"
+  ],
+  "professional-summary": "Experienced Ecommerce Tech Architect with a strong background in PHP and GoLang, offering over 10 years of expertise. Demonstrates a deep passion for software engineering and a particular focus on e-commerce webshop development using popular frameworks such as Magento and Spryker. Exhibits a keen interest in acquiring knowledge and adopting new e-commerce frameworks. Skilled in utilizing GoLang to create efficient microservices that meet business needs. Committed to employing test and behavior-driven development methodologies, with proficiency in Scrum and Lean Kanban methodologies.",
+  "skills": [
+    {
+      "title": "Soft Skills",
+      "items": [
+        "Team management and leadership",
+        "Communication with clients, team, and across projects",
+        "Requirement gathering, analysis & project estimation",
+        "Provide structured training to developers",
+        "Defining practices within the team (code of conduct) for various things like definition of done, structure of project documentation, test suites, support run books, etc."
+      ]
+    },
+    {
+      "title": "Tech Skills",
+      "items": [
+        "PHP",
+        "Golang",
+        "E-Commerce frameworks: Spryker, Magento 1 & 2",
+        "Testing frameworks: PHPUnit, PHPSpec, Behat, gomock, sqlmock",
+        "Javascript frameworks & libraries: jQuery, KnockoutJs, React (beginner)",
+        "Tools: Postman, Jira, Git, Slack, Trello, Pivotal Tracker",
+        "Event streaming & message queue: Kafka, RabbitMQ"
+      ]
+    }
+  ],
+  "workday": {
+    "title": "How do I spend my day at work?",
+    "duties": [
+      "Code reviews: every morning I mostly spend some time doing the code reviews and providing constructive feedback.",
+      "Agile ceremonies: dailies and weeklies, talking with the team to find out how the sprint is progressing, whether there are any blockers or someone needs help. Assess the overall situation and possible risks. Talking with POs and analysts to define the next set of work.",
+      "Pairing sessions: lots of them with different teammates for doing code reviews together, helping them solve bugs or providing support for development of complex tasks.",
+      "Development: I like to spend some time doing code on my own for complex tasks or tricky issues. Normally I work on tasks which define the processes or tools which help the team to do their work efficiently. For example, integration of a new test framework, integration of Kafka with the project, adding a profiling tool to project setup, etc.",
+      "Extra activities: Tech interviews, participate in RFP proposals to provide technical solutions based on Spryker, "
+    ]
+  },
+  "experience": {
+    "title": "Experiences",
+    "companies": [
+      {
+        "company": "Spryker - eCommerce / Marketplace framework",
+        "duties": [
+          "Experience in working different business models like B2C, B2C & B2B Marketplace.",
+          "Providing estimations by taking part in project RFPs",
+          "Developed payment integration(PayPal, Saferpay) with Spryker as an individual payment option",
+          "Developed custom cms to fulfil business need",
+          "Developed custom APIs to provide headless solution",
+          "Customised existing features like product, cart, checkout, payment, etc. as per client requirements",
+          "Developed microservices in goland to extend Spryker to connect with ERP, CRM, PIM, CMS, etc."
+        ]
+      },
+      {
+        "company": "Magento - eCommerce framework",
+        "duties": [
+          "Over 5+ years of extensive experience on the Magento eCommerce platform worked on different projects in Magento and various Magento extension development.",
+          "Data migration from Magento 1 to Magento 2",
+          "Worked with different versions of Magento Community (1.3.x to 2.2.x) and Magento Enterprise(1.11.x to 2.2.x)",
+          "Have developed Magento stores from an approved design to a functional storefront.",
+          "Extend Magento functionality through custom programming",
+          "Magento frontend development Building Custom Themes & Theme Integrations",
+          "Provided Maintenance and support for several Magento Stores.",
+          "Knowledge of integrating various Payment Gateways, shipping methods, third-party newsletters, etc.",
+          "Knowledge of integration of various APIs with Magento."
+        ]
+      },
+      {
+        "company": "Accenture Gmbh: September 2021 – to date",
+        "duties": [
+          "sdf"
+        ]
+      },
+      {
+        "company": "Inviqa Gmbh: December 2018 – August 2021",
+        "duties": [
+          "sdfds"
+        ]
+      },
+      {
+        "company": "Krish Technolabs: March 2015 – November 2018",
+        "duties": [
+          "fsdf"
+        ]
+      },
+      {
+        "company": "Tatvasoft: June 2013 – March 2015",
+        "duties": [
+          "fsdfs"
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Recent Projects",
+    "projects": [
+      {
+        "project": "Healthcare products brand - Spryker",
+        "duties": [
+          "Implementation of third party ERP to perform various operations like fetching price, checking availability during checkout process",
+          "Development of custom discount rules in Spryker to fullfill business requirement",
+          "Implementation of JWT token based login for customer in Spryker shop",
+          "Development of custom API endpoints to fulfill business logic"
+        ]
+      },
+      {
+        "project": "Online pharmacy project - Spryker",
+        "duties": [
+          "Implementation of multi-store multilingual webshop using microservice architecture",
+          "Added custom API endpoints to be consumed from different services",
+          "Worked on GO microservices for various features",
+          "Custom reports generation for customer, products, sales, etc. along with AWS and Google drive upload",
+          "Implemented Kafka based event message system to manage async data flow",
+          "Took part in deployment process using CI/CD pipelines managed by docker and Kubernetes",
+          "Involvement in requirement gathering for features defined by client in Jira using scrum kanban methodology"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "degrees": [
+      {
+        "degree": "B.Tech Computer Science",
+        "grades": "7.77 CGPA",
+        "institution": "Atmiya Institute of Technology & Science, GTU",
+        "duration": "2009-2013"
+      }
+    ]
+  },
+  "avatar": "../images/general/logo-dark.png",
+  "certifications": [
+    {
+      "title": "Spryker",
+      "url": "https://www.facebook.com/karanpopat1992"
+    },
+    {
+      "title": "Magento",
+      "url": "https://www.instagram.com/karanpopat1992"
+    },
+    {
+      "title": "Java",
+      "url": "https://www.github.com/popatkaran"
+    }
+  ],
+  "links": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/karanpopat1992"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/karanpopat1992"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://www.github.com/popatkaran"
+    }
+  ]
+}

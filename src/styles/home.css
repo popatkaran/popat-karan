@@ -1,0 +1,48 @@
+#page-home {
+  min-height: 100vh;
+  /* width: 80vw; */
+}
+
+#home-intro img {
+  max-width: 300px;
+  height: auto;
+  padding: 20px;
+}
+
+#home-intro .brand-tagline {
+  color: var(--cyan);
+  margin: 48px 0;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.intro-section.title {
+  margin: 64px 0;
+}
+
+.brand-tagline li {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.section-title {
+  font-size: var(--font-size-h3);
+  text-transform: uppercase;
+  margin-top: var(--margin-big);
+  margin-bottom: var(--margin-big);
+}
+
+/* #home-services {
+    background-color: var(--bg-green);
+  }
+
+  #home-certification{
+    background-color: var(--bg-blue);
+  } */
+
+#home-intro, #home-services, #home-certification, #home-platforms {
+  position: relative;
+}
