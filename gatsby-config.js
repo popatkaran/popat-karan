@@ -8,6 +8,7 @@ module.exports = {
     keywords: 'Karan, Karan Popat, Popat, e-commerce, e-commerce developer, e-commerce architect, technical architect, backend developer, lead developer, engineer, lead engineer, Spryker, Spryker Cloud Commerce OS, Adobe Comemrce, Magento, Magento 2, CommerceTools, SAP Commerce Cloud, SAP Hybris, popatkaran',
     author: `Karan Popat`,
     url: 'https://www.popatkaran.xyz/',
+    siteUrl: `https://popatkaran.gatsbyjs.io/`,
   },
   plugins: [
     `gatsby-plugin-image`,
