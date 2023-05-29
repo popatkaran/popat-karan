@@ -61,7 +61,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/`, `/about/`, `/contact/`, `prayers/hanumanchalisa/`, `prayers/hanuman-chalisa/`],
+        precachePages: [`/`, `/about/`, `/contact/`, `prayers/hanumanchalisaImage/`, `prayers/hanumanchalisaText`],
       },
     },
   ],

@@ -1,2 +1,2 @@
 ## Karan Popat
-#### Data Scientist / Master of finance
+#### Technologist | e - Commerce Architect | Engineering Manager
