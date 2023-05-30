@@ -1,0 +1,10 @@
+pre code {
+    color: var(--background);
+}
+
+pre {
+    background: var(--background-pre);
+    page-break-inside: avoid;
+    padding: 1em 1.5em;
+    word-wrap: break-word;
+}

@@ -1,16 +1,15 @@
 import * as React from "react"
-import { graphql } from "gatsby"
 import Layout from "../../components/layout"
 import { Card, Col, Container, Row } from "react-bootstrap"
 import Carousel from 'react-bootstrap/Carousel';
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+//import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import '../../styles/components/prayer.css'
 import staticData from '../../data/data.json'
 import hanumanChalisaImages from '../../data/prayers/hanumanchalisa-images.json'
 
-const Image = ({ image, name }) =>
-  <GatsbyImage image={getImage(image)} alt={name} title={name} imgClassName="img-fluid" />
+// const Image = ({ image, name }) =>
+//   <GatsbyImage image={getImage(image)} alt={name} title={name} imgClassName="img-fluid" />
 
 const Title = "|| श्री हनुमान चालीसा ||"
 

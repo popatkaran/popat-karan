@@ -1,0 +1,69 @@
+{
+  "key": "spryker",
+  "platform": "Spryker",
+  "banner": "../../images/platforms/banner-spryker.png",
+  "tagline": "We're proud to be the Premier Partner of commercetools to deliver headless technology for your eCommerce. Launch in weeks, not months, using Vue Storefront-based frontend.",
+  "what_is": "This is a placeholder for description about what is Spryker.",
+  "why_use": "This is a placeholder for description about why to use Spryker.",
+  "features": [
+    {
+      "title": "feature - 1",
+      "description": "This is a placeholder of Spryker feature 1."
+    },
+    {
+      "title": "feature - 2",
+      "description": "This is a placeholder of Spryker feature 2."
+    },
+    {
+      "title": "feature - 3",
+      "description": "This is a placeholder of Spryker feature 3."
+    },
+    {
+      "title": "feature - 4",
+      "description": "This is a placeholder of Spryker feature 4."
+    }
+  ],
+  "architecture_overview": [
+    {
+      "title": "Spryker Architecture",
+      "description": "This is a placeholder of Spryker Architecture description.",
+      "image": "../../images/platforms/banner-spryker.png"
+    }
+  ],
+  "bebefits": [
+    {
+      "title": "benefit - 1",
+      "description": "This is a placeholder of Spryker benefit 1."
+    },
+    {
+      "title": "benefit - 2",
+      "description": "This is a placeholder of Spryker benefit 2."
+    },
+    {
+      "title": "benefit - 3",
+      "description": "This is a placeholder of Spryker benefit 3."
+    },
+    {
+      "title": "benefit - 4",
+      "description": "This is a placeholder of Spryker benefit 4."
+    }
+  ],
+  "why_me": [
+    {
+      "title": "reason - 1",
+      "description": "Reson 1 why me."
+    },
+    {
+      "title": "reason - 2",
+      "description": "Reson 2 why me."
+    },
+    {
+      "title": "reason - 3",
+      "description": "Reson 3 why me."
+    },
+    {
+      "title": "reason - 4",
+      "description": "Reson 4 why me."
+    }
+  ]
+}

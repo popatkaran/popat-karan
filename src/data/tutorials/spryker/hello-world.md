@@ -8,11 +8,11 @@ type: "professional"
 order: 1
 ---
 
-## Objective
+### Objective
 
 Show "Hello World!" string on a web page on your browser. To do so, build a new module called **HelloWorld**.
 
-## Implementation steps
+### Implementation steps
 
 The steps described in this procedure describe how to build a new module. To add a new Yves module called **HelloWorld**, do the following:
 
