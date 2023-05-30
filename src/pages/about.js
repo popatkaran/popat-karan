@@ -19,7 +19,7 @@ const AboutPage = () => {
             title={staticData.info.name}
           />
         </Col>
-        <Col sm={12} md={12} lg={6} className="member-details">
+        <Col sm={12} md={12} lg={6} className="member-details margin-headbar">
           <Container>
             <Resume />
             <RenderDownloadButton />
