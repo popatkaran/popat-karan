@@ -35,14 +35,13 @@
   margin-bottom: var(--margin-big);
 }
 
-/* #home-services {
-    background-color: var(--bg-green);
-  }
+#home-services {}
 
-  #home-certification{
-    background-color: var(--bg-blue);
-  } */
+#home-certification {}
 
-#home-intro, #home-services, #home-certification, #home-platforms {
-  position: relative;
+#home-platforms {}
+
+#home-services, #home-certification, #home-platforms {
+  padding-top: var(--margin-big);
+  padding-bottom: var(--margin-big);
 }

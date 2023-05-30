@@ -12,7 +12,7 @@ import ContactIntro from "../components/contactpage/intro"
 const ContactPage = () => {
   return (
     <Layout>
-      <Row id="page-contact" className='page-contact justify-content-center  align-middle'>
+      <Row id="page-contact" className='page-contact justify-content-center margin-headbar align-middle'>
         <Col sm={12} md={12} lg={6} className="member-cover">
           <Image
             src={CoverImage}
@@ -21,7 +21,7 @@ const ContactPage = () => {
             title={staticData.info.name}
           />
         </Col>
-        <Col sm={12} md={12} lg={6} className="margin-headbar member-details">
+        <Col sm={12} md={12} lg={6} className="member-details">
           <Container>
             <ContactIntro data={staticData} />
             <ContactInformation data={staticData} />

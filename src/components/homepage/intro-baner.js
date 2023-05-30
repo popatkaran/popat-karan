@@ -5,7 +5,9 @@ import Logo from '../../images/logo-dark-x.png'
 
 export default function IntroBanenr({ data }) {
   var homeIntroRowClass = ''
-  var homeIntroStyle = {}
+  var homeIntroStyle = {
+    background: `${data.config.home_intro.bg_color}`
+  }
   if (data.config.hero_banner.display) {
     homeIntroRowClass = "bg-image"
     homeIntroStyle = {
@@ -14,7 +16,9 @@ export default function IntroBanenr({ data }) {
     }
   }
   return (
-    <Row className={`${homeIntroRowClass} top-padding-required full-page`} id="home-intro" style={homeIntroStyle}>
+    <Row id="home-intro"
+      className={`${homeIntroRowClass} top-padding-required full-page`}
+      style={homeIntroStyle}>
       <Col className="text-center vertical-center">
         <Image
           className="center-block img-responsive"

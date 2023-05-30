@@ -47,6 +47,8 @@
   --font-weight-h6: 900;
   --padding-single: 16px;
   --padding-double: 32px;
+  --padding-big: 64px;
+  --padding-headbar: 56px;
   --margin-single: 16px;
   --margin-double: 32px;
   --margin-big: 64px;
@@ -204,13 +206,20 @@ strong {
   margin-top: var(--margin-headbar);
 }
 
-.vertical-center {
+/* .vertical-center {
   margin: 0;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
+} */
+
+/* .vertical-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid green;
+} */
 
 
 @import url('./components/cards.css');

@@ -15,7 +15,7 @@ const IndexPage = () => {
     <Layout>
       <Row id="page-home" className='page-home justify-content-center align-middle'>
         <Col>
-          <Container>
+          <Container className="margin-headbar">
             <IntroBanenr data={staticData} />
             <Services data={staticData} />
             <Certifications data={staticData} />

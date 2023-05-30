@@ -1,6 +1,5 @@
 #page-prayer {
     min-height: 100vh;
-    margin-top: var(--margin-headbar);
     position: relative;
 }
 
@@ -15,16 +14,6 @@
     margin-top: var(--margin-big);
     margin-bottom: var(--margin-big);
 }
-
-/* .carousel-control-next, .carousel-control-prev {
-    bottom: 50%;
-    top: 0;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-image: none;
-    background-color: var(--cyan);
-} */
 
 #page-prayer .carousel-caption {
     color: var(--color);
