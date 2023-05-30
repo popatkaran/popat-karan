@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 
 import ServicesCard from '../service-card'
+import SectionTitle from '../section-title'
 
 export default function Services({ data }) {
   if (data.config.home_services.display) {
@@ -10,9 +11,7 @@ export default function Services({ data }) {
         className="half-page text-center justify-content-center"
         style={{ background: `${data.config.home_services.bg_color}` }}>
         <Col md={{ span: 9, offset: 0 }} className='vertical-center'>
-          <div className="section-title">
-            <strong>What</strong> I do?
-          </div>
+          <SectionTitle highlightedString={"What"} normalString={"I do?"} />
           <Row className='services'>
             {data.services.map((service, index) => {
               return <ServicesCard key={index} service={service} />

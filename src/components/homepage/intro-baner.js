@@ -26,7 +26,8 @@ export default function IntroBanenr({ data }) {
           title={data.info.name}
         />
         <div className="brand-tagline">
-          {data.info.role || data.info.tagline || data.info.short_description}
+          {/* <em>{data.info.role || data.info.tagline || data.info.short_description}</em> */}
+          <em>{'technologist'}</em> <em>{'e-commerce architect'}</em> <em>{'engineering manager'}</em>
         </div>
         <div className="brand-description">
           {data.info.short_description || data.info.description}

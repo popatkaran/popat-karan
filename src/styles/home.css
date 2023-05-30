@@ -28,13 +28,6 @@
   font-weight: 800;
 }
 
-.section-title {
-  font-size: var(--font-size-h3);
-  text-transform: uppercase;
-  margin-top: var(--margin-big);
-  margin-bottom: var(--margin-big);
-}
-
 #home-services {}
 
 #home-certification {}
