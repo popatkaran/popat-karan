@@ -2,9 +2,9 @@
   "key": "adobe-commerce",
   "platform": "Adobe Commerce",
   "banner": "../../images/platforms/banner-adobe-commerce.png",
-  "tagline": "We're proud to be the Premier Partner of commercetools to deliver headless technology for your eCommerce. Launch in weeks, not months, using Vue Storefront-based frontend.",
-  "what_is": "This is a placeholder for description about what is Adobe Commerce.",
-  "why_use": "This is a placeholder for description about why to use Adobe Commerce.",
+  "tagline": "Adobe Commerce (formerly Magento) is a flexible, scalable platform that can grow as your business grows. We offer a wide range of powerful features to help you succeed online. Adobe Commerce uses AI and advanced data exchange capabilities to create end-to-end personalized B2C and B2B commerce experiences on a single  flexible, extensible, and scalable platform. Adobe Commerce is an all-in-one platform for building and maintaining the branding needs of any e-commerce business. Ideally, it offers dynamic features that can enhance your brand even further. With Adobe Commerce software, you can create a website that is uniquely customized to your business needs, increase sales, and convert customers faster. ",
+  "about": "Adobe Commerce (formerly Magento) is a flexible, scalable platform that can grow as your business grows. We offer a wide range of powerful features to help you succeed online. Adobe Commerce uses AI and advanced data exchange capabilities to create end-to-end personalized B2C and B2B commerce experiences on a single  flexible, extensible, and scalable platform. Adobe Commerce is an all-in-one platform for building and maintaining the branding needs of any e-commerce business. Ideally, it offers dynamic features that can enhance your brand even further. With Adobe Commerce software, you can create a website that is uniquely customized to your business needs, increase sales, and convert customers faster. ",
+  "why": "This is a placeholder for description about why to use Adobe Commerce.",
   "features": [
     {
       "title": "feature - 1",
@@ -23,14 +23,9 @@
       "description": "This is a placeholder of Adobe Commerce feature 4."
     }
   ],
-  "architecture_overview": [
-    {
-      "title": "Spryker Architecture",
-      "description": "This is a placeholder of Spryker Architecture description.",
-      "image": "../../images/platforms/banner-spryker.png"
-    }
-  ],
-  "bebefits": [
+  "arch_description": "This is a placeholder of Spryker Architecture description.",
+  "arch_image": "../../images/platforms/arch-adobe-commerce.png",
+  "benefits": [
     {
       "title": "benefit - 1",
       "description": "This is a placeholder of Adobe Commerce benefit 1."

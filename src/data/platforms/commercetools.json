@@ -1,10 +1,10 @@
 {
   "key": "commercetools",
   "platform": "CommerceTools",
-  "banner": "../../images/platforms/banner-commercetools.png",
-  "tagline": "We're proud to be the Premier Partner of commercetools to deliver headless technology for your eCommerce. Launch in weeks, not months, using Vue Storefront-based frontend.",
-  "what_is": "This is a placeholder for description about what is CommerceTools.",
-  "why_use": "This is a placeholder for description about why to use CommerceTools.",
+  "banner": "../../images/platforms/banner-commerectools.png",
+  "tagline": "Commercetools is a cloud-based e-commerce platform that provides a flexible commerce API at its core. It supports modern microservices-based architectures and offers a wide range of integrations. Commercetools is the answer to the most common problems in e-commerce today. First, an API-first approach creates microservices, services, and integrations with third-party solutions, making solutions scalable, easier to maintain, and less costly. Second, you can use commercetools to add e-commerce capabilities to your microservices-based landscape. Finally, commercetools creates innovative commerce experiences that drive traffic to your digital touchpoints and deliver great shopping experiences that can increase customer satisfaction and loyalty. ",
+  "about": "Commercetools is a cloud-based e-commerce platform that provides a flexible commerce API at its core. It supports modern microservices-based architectures and offers a wide range of integrations. Commercetools is the answer to the most common problems in e-commerce today. First, an API-first approach creates microservices, services, and integrations with third-party solutions, making solutions scalable, easier to maintain, and less costly. Second, you can use commercetools to add e-commerce capabilities to your microservices-based landscape. Finally, commercetools creates innovative commerce experiences that drive traffic to your digital touchpoints and deliver great shopping experiences that can increase customer satisfaction and loyalty. ",
+  "why": "This is a placeholder for description about why to use CommerceTools.",
   "features": [
     {
       "title": "feature - 1",
@@ -23,14 +23,9 @@
       "description": "This is a placeholder of CommerceTools feature 4."
     }
   ],
-  "architecture_overview": [
-    {
-      "title": "Spryker Architecture",
-      "description": "This is a placeholder of Spryker Architecture description.",
-      "image": "../../images/platforms/banner-spryker.png"
-    }
-  ],
-  "bebefits": [
+  "arch_description": "This is a placeholder of Spryker Architecture description.",
+  "arch_image": "../../images/platforms/arch-commercetools.png",
+  "benefits": [
     {
       "title": "benefit - 1",
       "description": "This is a placeholder of CommerceTools benefit 1."

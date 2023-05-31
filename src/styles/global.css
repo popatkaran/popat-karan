@@ -1,5 +1,11 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900'); */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
 
 :root {
   --background: #ffffff;
@@ -17,8 +23,8 @@
   --red: #ff8272;
   --green: #b4fa72;
   --blue: #a5d5fe;
-  /* --cyan: #4ce4b4; */
-  --cyan: #27d8cf;
+  --cyan: #4ce4b4;
+  /* --cyan: #27d8cf; */
   --orange: #fccc76;
   --yellow: #fefdc2;
   --grey: #f4f6fb;
@@ -111,7 +117,11 @@ body {
 
 body {
   /* font-family: 'Montserrat', sans-serif; */
-  font-family: 'Work Sans', sans-serif;
+  /* font-family: 'Work Sans', sans-serif; */
+  /* font-family: 'Ysabeau', sans-serif; */
+  /* font-family: 'Be Vietnam Pro', sans-serif; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Roboto', sans-serif;
   font-weight: var(--font-weight-body);
   font-size: var(--font-size-body);
   margin: 0;
@@ -138,11 +148,17 @@ body {
   min-height: 25vh;
 }
 
+ol, ul {
+  list-style: square;
+  padding-left: 16px;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-align: center;
+  /* width: -moz-fit-content;
+  width: fit-content; */
+  text-align: left;
   padding-bottom: var(--padding-single);
 }
 
@@ -220,27 +236,34 @@ strong {
 .section-title strong {
   font-size: var(--font-size-h1);
   color: var(--components);
-  text-shadow: -4px 2px 8px var(--text-shadow-effect);
-  letter-spacing: -2px;
+  text-shadow: -4px 2px 8px var(--color);
+  letter-spacing: 0px;
   user-select: none;
   transition: all 0.25s ease-out;
 }
 
-.section-title strong:hover {
-  text-shadow: -8px 4px 16px var(--text-shadow-effect);
-  letter-spacing: 4px;
-}
+/* .section-title strong:hover {
+  text-shadow: -8px 4px 16px var(--color);
+  letter-spacing: -2px;
+} */
 
 em {
   font-style: normal;
   padding: 0 var(--padding-single) 0 var(--padding-single);
   margin: 8px var(--margin-single) 8px var(--margin-single);
-  border-radius: 8px;
+  border-radius: 4px;
   position: relative;
-  background: linear-gradient(to right, var(--cyan), var(--color));
-  transform: skewX(-9deg);
+  /* background: linear-gradient(to right, var(--cyan), var(--color)); */
+  background: linear-gradient(to right, var(--cyan), var(--cyan));
+  transform: skewX(-6deg);
   display: inline-block;
   color: var(--components);
 }
 
+/** ELEMENTS TO IMLEMENT **/
+/** https://codepen.io/StephenScaff/pen/oLBqmw
+https://codepen.io/yoksel/pen/XJbzrO **/
+/** ELEMENTS TO IMLEMENT **/
+
 @import url('./components/cards.css');
+@import url('./components/platform.css');

@@ -14,7 +14,7 @@
 .card-body {
   text-align: center;
   align-items: center;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   min-height: 15vh;
   flex-wrap: wrap;

@@ -1,18 +1,36 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import Layout from "../../components/layout"
-import { Col, Row } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 
 import staticData from '../../data/data.json'
 import Heading from "../../components/platform/heading"
+import IntroBannerWithTagline from "../../components/platform/intro_banner-tagline"
+import AboutPlatform from "../../components/platform/about"
+import Features from "../../components/platform/features"
+import Benefits from "../../components/platform/benefits"
+import ArchitectureOverview from "../../components/platform/architecture-overview"
+import WhyMe from "../../components/platform/why-me"
 
 const Spryker = ({ data }) => {
   const platformInfo = data.platformsJson
+  console.log(platformInfo)
   return (
     <Layout>
       <Row id="page-platform" className='page-platform half-page spryker margin-headbar justify-content-center'>
-        <Col md={{ span: 9, offset: 0 }} className='vertical-center text-center' >
-          <Heading value={platformInfo.platform} />
+        <Col>
+          <Container>
+            <Heading value={platformInfo.platform} />
+            <IntroBannerWithTagline banner={platformInfo.banner} tagline={platformInfo.tagline} platform={platformInfo.platform} />
+            {/* <AboutPlatform value={platformInfo.about} platform={platformInfo.platform} /> */}
+            <Features platform={platformInfo.platform} features={platformInfo.features} />
+            <ArchitectureOverview
+              platform={platformInfo.platform}
+              banner={platformInfo.arch_image}
+              description={platformInfo.arch_description} />
+            <Benefits platform={platformInfo.platform} benefits={platformInfo.benefits} />
+            <WhyMe whyMe={platformInfo.why_me} />
+          </Container>
         </Col>
       </Row>
     </Layout >
@@ -33,22 +51,19 @@ export const query = graphql`
         }
       }
       tagline
-      what_is
-      why_use
+      about
+      why
       features {
         title
         description
       }
-      architecture_overview {
-        title
-        description
-        image {
-          childImageSharp {
-            gatsbyImageData(formats: PNG, placeholder: BLURRED)
-          }
+      arch_description
+      arch_image {
+        childImageSharp {
+          gatsbyImageData(formats: PNG, placeholder: BLURRED)
         }
       }
-      bebefits {
+      benefits {
         title
         description
       }

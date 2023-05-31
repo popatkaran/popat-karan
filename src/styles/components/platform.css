@@ -1,0 +1,30 @@
+#platform-heading .section-title strong {
+    font-size: 40px;
+    letter-spacing: 0px;
+    transition: all 0.5s ease-out;
+}
+
+/* #platform-heading .section-title strong:hover {
+    letter-spacing: 0px;
+} */
+
+h4.section-title {
+    text-align: center;
+    font-weight: 900;
+    font-size: var(--font-size-h4) !important;
+}
+
+#platform-intro .desc, #platform-arch .desc {
+    padding: var(--padding-single);
+    display: flex;
+    align-items: center;
+}
+
+#platform-arch, #platform-why_me, #platform-benefits, #platform-features {
+    padding: var(--padding-big) 0;
+    text-align: center;
+}
+
+#platform-benefits .card, #platform-features .card {
+    box-shadow: none;
+}

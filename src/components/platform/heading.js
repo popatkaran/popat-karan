@@ -4,8 +4,8 @@ import SectionTitle from '../section-title'
 
 export default function Heading({ value }) {
     return (
-        <Row id="heading" className="text-center justify-content-center">
-            <Col md={{ span: 9, offset: 0 }} className='vertical-center'>
+        <Row id="platform-heading" className="text-center justify-content-center">
+            <Col>
                 <SectionTitle highlightedString={value} normalString={""} />
             </Col >
         </Row >

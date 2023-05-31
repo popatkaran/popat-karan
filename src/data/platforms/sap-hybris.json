@@ -2,9 +2,9 @@
   "key": "sap-commerce",
   "platform": "SAP Commerce - Hybris",
   "banner": "../../images/platforms/banner-sap-hybris.png",
-  "tagline": "We're proud to be the Premier Partner of commercetools to deliver headless technology for your eCommerce. Launch in weeks, not months, using Vue Storefront-based frontend.",
-  "what_is": "This is a placeholder for description about what is SAP Commerce(Hybris).",
-  "why_use": "This is a placeholder for description about why to use SAP Commerce(Hybris).",
+  "tagline": "SAP Hybris Commerce is an e-commerce product solution that helps you manage commodity products around the customer experience. We provide solutions that enable businesses to reduce costs, save time, reduce complexity, and deliver superior customer service with less focus. SAP Hybris is designed to grow with your organization's specific needs and work with other business architectures to improve productivity and efficiency. SAP Hybris includes  B2C commerce, B2B commerce, content and product catalog management, omnichannel order fulfillment, and merchandising to understand what customers want and turn visitors into buyers. of products are included. With SAP Hybris, you can set up a personalized e-commerce store just the way you want it. The solution is highly flexible and offers many customization options for maximum efficiency and scalability. ",
+  "about": "SAP Hybris Commerce is an e-commerce product solution that helps you manage commodity products around the customer experience. We provide solutions that enable businesses to reduce costs, save time, reduce complexity, and deliver superior customer service with less focus. SAP Hybris is designed to grow with your organization's specific needs and work with other business architectures to improve productivity and efficiency. SAP Hybris includes  B2C commerce, B2B commerce, content and product catalog management, omnichannel order fulfillment, and merchandising to understand what customers want and turn visitors into buyers. of products are included. With SAP Hybris, you can set up a personalized e-commerce store just the way you want it. The solution is highly flexible and offers many customization options for maximum efficiency and scalability. ",
+  "why": "This is a placeholder for description about why to use SAP Commerce(Hybris).",
   "features": [
     {
       "title": "feature - 1",
@@ -23,14 +23,9 @@
       "description": "This is a placeholder of SAP Commerce(Hybris) feature 4."
     }
   ],
-  "architecture_overview": [
-    {
-      "title": "Spryker Architecture",
-      "description": "This is a placeholder of Spryker Architecture description.",
-      "image": "../../images/platforms/banner-spryker.png"
-    }
-  ],
-  "bebefits": [
+  "arch_description": "This is a placeholder of Spryker Architecture description.",
+  "arch_image": "../../images/platforms/arch-sap-hybris.png",
+  "benefits": [
     {
       "title": "benefit - 1",
       "description": "This is a placeholder of SAP Commerce(Hybris) benefit 1."

@@ -2,9 +2,9 @@
   "key": "spryker",
   "platform": "Spryker",
   "banner": "../../images/platforms/banner-spryker.png",
-  "tagline": "We're proud to be the Premier Partner of commercetools to deliver headless technology for your eCommerce. Launch in weeks, not months, using Vue Storefront-based frontend.",
-  "what_is": "This is a placeholder for description about what is Spryker.",
-  "why_use": "This is a placeholder for description about why to use Spryker.",
+  "tagline": "Spryker is a modern cloud-native platform-as-a-service solution that enables companies to create winning transactional business models in B2B, Enterprise Marketplaces, Unified Commerce and B2C. It is headless, API-based, enterprise-ready and flexible. It is also scalable and easy to customize. According to TrustRadius, Spryker is a flexible, easy customizable, and scalable eCommerce solution that builds a strong base which helps standardize processes. Gartner ranks Spryker as #1 for Composable Commerce in the 2022 Critical Capabilities for Digital Commerce report.",
+  "about": "Spryker is a modern cloud-native platform-as-a-service solution that enables companies to create winning transactional business models in B2B, Enterprise Marketplaces, Unified Commerce and B2C. It is headless, API-based, enterprise-ready and flexible. It is also scalable and easy to customize. According to TrustRadius, Spryker is a flexible, easy customizable, and scalable eCommerce solution that builds a strong base which helps standardize processes. Gartner ranks Spryker as #1 for Composable Commerce in the 2022 Critical Capabilities for Digital Commerce report.",
+  "why": "This is a placeholder for description about why to use Spryker.",
   "features": [
     {
       "title": "feature - 1",
@@ -23,14 +23,9 @@
       "description": "This is a placeholder of Spryker feature 4."
     }
   ],
-  "architecture_overview": [
-    {
-      "title": "Spryker Architecture",
-      "description": "This is a placeholder of Spryker Architecture description.",
-      "image": "../../images/platforms/banner-spryker.png"
-    }
-  ],
-  "bebefits": [
+  "arch_description": "This is a placeholder of Spryker Architecture description.",
+  "arch_image": "../../images/platforms/arch-spryker.png",
+  "benefits": [
     {
       "title": "benefit - 1",
       "description": "This is a placeholder of Spryker benefit 1."
