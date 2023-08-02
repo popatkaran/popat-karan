@@ -12,7 +12,12 @@
     justify-content: flex-end;
 }
 
+.dark .offcanvas-header, .dark .offcanvas-body {
+    background: var(--dark-background);
+}
+
 .offcanvas-title {
+    color: var(--primary);
     text-transform: uppercase;
     font-weight: var(--font-weight-h1);
     margin: var(--margin-double);
@@ -22,10 +27,6 @@
 
 .offcanvas-body {
     text-align: center;
-}
-
-.navbar {
-    background: var(--background);
 }
 
 .navbar-toggler {
@@ -40,11 +41,18 @@
 
 .nav-link {
     text-transform: uppercase;
-    color: var(--color);
+}
+
+.light .nav-link {
+    color: var(--text);
+}
+
+.dark .nav-link {
+    color: var(--light-text);
 }
 
 .nav-link:focus, .nav-link:hover {
-    color: var(--cyan);
+    color: var(--secondary);
 }
 
 .navbar-brand {
@@ -52,9 +60,22 @@
     text-transform: uppercase;
     margin-left: var(--margin-single);
     margin-right: var(--margin-single);
-    color: var(--color);
+    color: var(--primary);
 }
 
 .offcanvas-header .btn-close {
     margin-right: var(--margin-single);
+}
+
+.bg-dark {
+    background-color: var(--dark-background) !important
+}
+
+.bg-light {
+    background-color: var(--background) !important
+}
+
+.theme-switch {
+    position: fixed !important;
+    right: 80px !important;
 }

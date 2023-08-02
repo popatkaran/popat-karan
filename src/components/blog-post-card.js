@@ -1,24 +1,21 @@
 import React from 'react'
 import { Card, Col } from 'react-bootstrap'
 
-export default function BlogPostCard({ platform }) {
+import blogPostPlaceholderImage from '../images/logo-dark-x.png'
+import FluidImage from './fluid-image'
+
+export default function BlogPostCard({ post }) {
   return (
-    <Col xs={12} sm={6} md={6} lg={6} xl={3} xxl={3} className='d-flex align-items-stretch'>
-      <a href={platform.link} target='_blank' rel="noreferrer" title={platform.title}>
-        <Card>
-          <Card.Img
-            width={240}
-            height={'auto'}
-            className="credential-badge"
-            variant="top" src={platform.picture}
-            alt={platform.title}
-            title={platform.title} />
+    <Col xs={12} sm={6} md={6} lg={6} xl={3} xxl={3} className="d-flex align-items-stretch blog-post-card">
+      <a href={post.frontmatter.slug} target='_blank' rel="noreferrer" title={post.frontmatter.title}>
+        <Card className={`${post.frontmatter.category} article-card`}>
+          <FluidImage customClass='card-img-top credential-badge' image={post.frontmatter.image ? post.frontmatter.image : blogPostPlaceholderImage} name={post.title} />
           <Card.Body>
-            <Card.Title>{platform.title}</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">{platform.title}</Card.Subtitle>
+            <Card.Title>{post.frontmatter.title}</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">{post.frontmatter.description}</Card.Subtitle>
           </Card.Body>
-        </Card>
-      </a>
-    </Col>
+        </Card >
+      </a >
+    </Col >
   )
 }

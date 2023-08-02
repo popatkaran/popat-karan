@@ -17,7 +17,7 @@ const Spryker = ({ data }) => {
   console.log(platformInfo)
   return (
     <Layout>
-      <Row id="page-platform" className='page-platform half-page spryker margin-headbar justify-content-center'>
+      <Row id="page-platform" className='page-platform half-page spryker padding-headbar justify-content-center'>
         <Col>
           <Container>
             <Heading value={platformInfo.platform} />

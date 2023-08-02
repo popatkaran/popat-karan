@@ -16,8 +16,8 @@ const CommerceTools = ({ data }) => {
   const platformInfo = data.platformsJson
   return (
     <Layout>
-      <Row id="page-platform" className='page-platform half-page commercetools margin-headbar justify-content-center'>
-        <Col md={{ span: 9, offset: 0 }} className='vertical-center text-center' >
+      <Row id="page-platform" className='page-platform half-page commercetools padding-headbar justify-content-center'>
+        <Col md={{ span: 10, offset: 0 }} className='vertical-center text-center' >
           <Container>
             <Heading value={platformInfo.platform} />
             <IntroBannerWithTagline banner={platformInfo.banner} tagline={platformInfo.tagline} platform={platformInfo.platform} />

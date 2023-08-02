@@ -2,8 +2,9 @@
 slug: "/spryker/training/pub-sync"
 date: "2019-05-04"
 title: "Publish & Synchronization"
-category: "Spryker Tutorials"
+category: "spryker"
 type: "professional"
+image: '../../../images/platforms/banner-spryker.png'
 order: 997
 ---
 

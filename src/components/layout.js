@@ -8,6 +8,8 @@ import Footer from "./footer"
 import '../styles/global.css';
 import staticData from '../data/data.json'
 
+export const ThemeContext = React.createContext(null)
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -22,12 +24,24 @@ const Layout = ({ children }) => {
     }
   `)
 
+  let initialTheme = (window.localStorage.getItem('theme') != null) ? window.localStorage.getItem('theme') : ((new Date().getHours() > 16) ? "dark" : "light")
+  const [theme, setTheme] = React.useState(initialTheme)
+
+  const toggleTheme = () => {
+    setTheme((ct) => (ct === "light" ? "dark" : "light"))
+  }
+
+  React.useEffect(() => {
+    window.localStorage.setItem('theme', theme);
+  }, [theme]);
   return (
-    <Container className="container-fluid p-0">
-      <Header data={data.site.siteMetadata} />
-      {children}
-      <Footer data={staticData} />
-    </Container>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <Container className="container-fluid p-0" id={theme}>
+        <Header data={data.site.siteMetadata} theme={theme} />
+        {children}
+        <Footer data={staticData} />
+      </Container>
+    </ThemeContext.Provider>
   )
 }
 

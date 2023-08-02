@@ -2,8 +2,9 @@
 slug: '/horoscope-2079/mithun'
 title: 'Mithun'
 date: '13.03.1992'
-category: 'Horoscope 2079'
+category: 'horoscope_2079'
 type: 'personal'
+image: '../../images/logo-dark-x.png'
 order: 2
 ---
 

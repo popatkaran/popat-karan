@@ -10,8 +10,8 @@ import staticData from '../../data/data.json'
 const HanumanchalisaText = ({ data }) => {
   return (
     <Layout>
-      <Row id="page-prayer" className='page-prayer hanumanchalisa margin-headbar justify-content-center align-middle'>
-        <Col md={{ span: 9, offset: 0 }} className='vertical-center text-center' >
+      <Row id="page-prayer" className='page-prayer hanumanchalisa padding-headbar justify-content-center align-middle'>
+        <Col md={{ span: 10, offset: 0 }} className='vertical-center text-center' >
           <Container>
             <h3 className="center-title">{data.allHanumanchalisaJson.nodes[0].title}</h3>
             <Carousel variant="dark" keyboard={true} controls={false} indicators={false} interval={3000}>

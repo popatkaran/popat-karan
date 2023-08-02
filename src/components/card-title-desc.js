@@ -3,10 +3,10 @@ import { Col } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card';
 
 export default function CardTitleDescription({ info, xl, xxl }) {
-  var xl = xl || 6
-  var xl = xxl || 6
+  var exl = { xl } || 6
+  var exxl = { xxl } || 6
   return (
-    <Col xs={12} sm={6} md={6} lg={6} xl={xl} xxl={xxl}>
+    <Col xs={12} sm={6} md={6} lg={6} xl={exl} xxl={exxl}>
       <Card>
         <Card.Body>
           <Card.Title>{info.title}</Card.Title>

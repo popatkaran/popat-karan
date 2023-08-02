@@ -1,14 +1,18 @@
 .card {
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 5px 20px;
-  border: 0;
   margin-top: var(--margin-single);
   margin-bottom: var(--margin-single);
   position: relative;
+  border: 2px solid var(--white);
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom right, var(--primary), transparent);
+  /* box-shadow: rgba(0, 0, 0, 0.09) 0px 5px 20px; */
+  box-shadow: none;
 }
 
 .card:hover {
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 8px; */
+  border-image-source: linear-gradient(to bottom right, transparent, var(--secondary));
 }
 
 .card-body {

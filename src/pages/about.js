@@ -10,7 +10,7 @@ import Resume from "../components/aboutpage/resume"
 const AboutPage = () => {
   return (
     <Layout>
-      <Row id="page-about" className='page-about justify-content-center margin-headbar  align-middle'>
+      <Row id="page-about" className='page-about justify-content-center padding-headbar  align-middle'>
         <Col sm={12} md={12} lg={6} className="member-cover">
           <Image
             src={CoverImage}
@@ -19,7 +19,7 @@ const AboutPage = () => {
             title={staticData.info.name}
           />
         </Col>
-        <Col sm={12} md={12} lg={6} className="member-details margin-headbar">
+        <Col sm={12} md={12} lg={6} className="member-details padding-headbar">
           <Container>
             <Resume />
             <RenderDownloadButton />

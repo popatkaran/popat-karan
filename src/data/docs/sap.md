@@ -2,8 +2,9 @@
 slug: '/notes/sap'
 date: '2019-05-04'
 title: 'SAP'
-category: 'SAP'
+category: 'sap_hybris'
 type: 'professional'
+image: '../../images/platforms/banner-sap-hybris.png'
 order: 6
 ---
 

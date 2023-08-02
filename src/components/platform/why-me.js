@@ -7,7 +7,7 @@ export default function WhyMe({ whyMe }) {
     return (
         <Row id="platform-why_me"
             className="half-page text-center justify-content-center">
-            <Col md={{ span: 9, offset: 0 }} className='vertical-center'>
+            <Col md={{ span: 10, offset: 0 }} className='vertical-center'>
                 {/* <SectionTitle highlightedString={"What"} normalString={"I do?"} /> */}
                 <Row>
                     <Col>

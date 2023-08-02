@@ -12,8 +12,8 @@ export default function Template({ data }) {
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-      <Row id="page-blog-details" className='page-blog-details margin-headbar justify-content-center'>
-        <Col>
+      <Row id="page-blog-details" className='page-blog-details padding-headbar justify-content-center'>
+        <Col md={{ span: 10, offset: 0 }} className='vertical-center'>
           <Container>
             <h2>{frontmatter.title}</h2>
             <div
@@ -28,13 +28,26 @@ export default function Template({ data }) {
   )
 }
 
+export const Head = ({ data }) => (
+  <>
+    <title>{data.markdownRemark.frontmatter.title}</title>
+    <meta name="description" content="meta discription " />
+  </>
+)
+
 export const pageQuery = graphql`
   query($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        slug
         title
+        tags
+        slug
+        order
+        description
+        date
+        category
+        type
       }
     }
   }

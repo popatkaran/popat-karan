@@ -7,20 +7,20 @@
   "why": "This is a placeholder for description about why to use Adobe Commerce.",
   "features": [
     {
-      "title": "feature - 1",
-      "description": "This is a placeholder of Adobe Commerce feature 1."
+      "title": "Flexible Architecture for Seamless Scalability",
+      "description": "Adobe Commerce's cloud-native architecture and support for modern technologies such as GraphQL and PWA (Progressive Web Apps) empower developers to build high-performing and scalable e-commerce websites."
     },
     {
-      "title": "feature - 2",
-      "description": "This is a placeholder of Adobe Commerce feature 2."
+      "title": "Personalization and Customer Experience",
+      "description": "Adobe Commerce integrates seamlessly with Adobe Experience Manager (AEM) and Adobe Target, allowing you to leverage powerful content management and personalization tools to create unique and tailored experiences for your customers."
     },
     {
-      "title": "feature - 3",
-      "description": "This is a placeholder of Adobe Commerce feature 3."
+      "title": "Extensibility and Customization",
+      "description": "Adobe Commerce's extensive API library, including REST and GraphQL APIs, enables seamless integration with third-party systems, such as ERP (Enterprise Resource Planning) or CRM (Customer Relationship Management), and facilitates the development of custom functionalities."
     },
     {
-      "title": "feature - 4",
-      "description": "This is a placeholder of Adobe Commerce feature 4."
+      "title": "Robust Commerce Features and Management Tools",
+      "description": "Adobe Commerce's back-end administration interface, powered by Adobe Commerce Manager, provides an intuitive user experience for managing products, orders, and customer data. The platform also offers built-in analytics and reporting capabilities to gain insights into sales performance, customer behavior, and overall business operations."
     }
   ],
   "arch_description": "This is a placeholder of Spryker Architecture description.",

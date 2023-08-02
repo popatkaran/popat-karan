@@ -7,23 +7,23 @@
   "why": "This is a placeholder for description about why to use Spryker.",
   "features": [
     {
-      "title": "feature - 1",
-      "description": "This is a placeholder of Spryker feature 1."
+      "title": "Modular Architecture for Agile Development",
+      "description": "Spryker's modular architecture is based on the Symfony framework, providing developers with a robust foundation and a wide range of Symfony bundles that can be leveraged for rapid development and seamless integration of custom functionalities."
     },
     {
-      "title": "feature - 2",
-      "description": "This is a placeholder of Spryker feature 2."
+      "title": "Headless Commerce for Flexible Front-End Experiences",
+      "description": "Spryker provides a comprehensive set of APIs and SDKs that enable easy integration with any front-end system, including web, mobile, IoT, voice assistants, and more. This headless commerce architecture ensures flexibility in creating immersive and personalized experiences for customers."
     },
     {
-      "title": "feature - 3",
-      "description": "This is a placeholder of Spryker feature 3."
+      "title": "Cloud-Native Architecture for Scalability and Efficiency",
+      "description": "Spryker's cloud-native architecture is supported by containerization technologies like Docker, enabling easy deployment, management, and scaling of Spryker instances. Additionally, the platform integrates with cloud services, such as AWS Elastic Beanstalk and Google Kubernetes Engine, to streamline infrastructure management and maximize scalability."
     },
     {
-      "title": "feature - 4",
-      "description": "This is a placeholder of Spryker feature 4."
+      "title": "Extensible Architecture for Seamless Integration",
+      "description": "Spryker offers a wide range of integrations, including payment gateways, ERP systems, CRM platforms, and marketing tools. The platform's integration framework and API-based approach simplify the process of connecting external systems, ensuring smooth data exchange and enhanced business operations. Additionally, Spryker provides a marketplace of pre-built modules and extensions that can be leveraged to accelerate development and reduce time to market."
     }
   ],
-  "arch_description": "This is a placeholder of Spryker Architecture description.",
+  "arch_description": "Spryker architecture is designed with two main application layers that are separated from each other: frontend and backend. This architecture allows any storefront application to connect with the back office application easily. Spryker is a Commerce Operating System, mainly composed of several applications such as Storefront (Yves), Back Office (Zed), and Storefront API (Glue). Storefront is the frontend presentation layer for customers provided by Yves Application Layer based on Symfony Components. The backend application is responsible for managing the business logic and data storage. It is built using Zed Application Layer based on Symfony Components. The Storefront API (Glue) is responsible for providing a RESTful API for the storefront application. It is built using the Silex micro-framework. This architecture allows Spryker to be highly modular and flexible. It also allows businesses to easily customize their storefront application without affecting the backend application.",
   "arch_image": "../../images/platforms/arch-spryker.png",
   "benefits": [
     {

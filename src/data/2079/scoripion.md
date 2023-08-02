@@ -2,8 +2,9 @@
 slug: '/horoscope-2079/scorpion'
 title: 'Scorpion'
 date: '30.08.1968'
-category: 'Horoscope 2079'
+category: 'horoscope_2079'
 type: 'personal'
+image: '../../images/logo-dark-x.png'
 order: 3
 ---
 

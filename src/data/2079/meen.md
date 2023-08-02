@@ -2,8 +2,9 @@
 slug: '/horoscope-2079/pieces'
 title: 'Pieces'
 date: '25.07.1959'
-category: 'Horoscope 2079'
+category: 'horoscope_2079'
 type: 'personal'
+image: '../../images/logo-dark-x.png'
 order: 4
 ---
 

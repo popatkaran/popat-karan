@@ -2,9 +2,10 @@
 slug: '/blog/spryker/install-general'
 date: '2021-11-23'
 title: 'Spryker installation All'
-category: 'Spryker'
+category: "spryker"
 tags: ['spryker', 'installation', 'karan', 'karan popat', 'popatkaran']
 type: 'professional'
+image: '../../../images/platforms/banner-spryker.png'
 order: 1
 ---
 

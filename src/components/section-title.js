@@ -1,7 +1,4 @@
 import React from 'react'
-import { Col } from 'react-bootstrap'
-import Card from 'react-bootstrap/Card';
-
 
 export default function SectionTitle({ highlightedString, normalString }) {
     const highlightedTitleArray = `${highlightedString}`.split('')

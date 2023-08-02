@@ -2,8 +2,9 @@
 slug: '/notes/architecture-as-code'
 date: '2023-02-16'
 title: 'Architecture as code'
-category: 'Knowledge Base'
+category: 'software_architecture'
 type: 'professional'
+image: '../../images/software-architecture.png'
 order: 0
 ---
 

@@ -2,8 +2,9 @@
 slug: '/spryker/training/solution_architect'
 date: '2023-03-01'
 title: 'Solution Architect'
-category: 'Spryker'
+category: "spryker"
 type: 'professional'
+image: '../../../images/platforms/banner-spryker.png'
 order: 0
 ---
 

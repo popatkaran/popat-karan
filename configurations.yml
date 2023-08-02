@@ -1,0 +1,55 @@
+config:
+  hero_banner:
+    display: false
+    url: ""
+  resume:
+    allow_download: true
+    url: https://raw.githubusercontent.com/popatkaran/assets/c4a5168108ee0b0511b4e33d06674291489ff18a/karan-popat.pdf
+  home_intro:
+    display: true
+    bg_color: ""
+  home_services:
+    display: true
+    bg_color: ""
+  home_certifications:
+    display: true
+    bg_color: ""
+  home_platforms:
+    display: true
+    bg_color: ""
+  image_logo:
+    display: true
+  text_logo:
+    display: true
+  social_media:
+    display: true
+  footer_links:
+    display: true
+  copyright:
+    display: true
+  menu:
+    display: true
+  socialmedia:
+    display: true
+  footerlinks:
+    display: true
+info:
+  name: Karan Popat
+  role: " Technologist | e - Commerce Architect | Engineering Manager "
+  tagline: This is tagline placeholder.
+  short_description: I help my clients to thrive in their digital business by
+    providing best-in-class solutions.
+  description: Donec lobortis volutpat feugiat. Sed finibus nunc gravida, posuere
+    lorem a, rutrum ex. Aenean rhoncus nunc nec neque placerat, in venenatis
+    diam vestibulum. Nunc id tristique odio. In augue ipsum, feugiat a sapien
+    et, varius luctus arcu. Donec rutrum ut tellus tincidunt suscipit. Donec
+    tempor a nunc in sollicitudin. Donec faucibus purus est, eu blandit velit
+    finibus ut. Praesent a sagittis dui. Orci varius natoque penatibus et magnis
+    dis parturient montes, nascetur ridiculus mus. Nulla at orci nec leo mollis
+    mattis. Cras faucibus dui sit amet purus molestie, maximus rhoncus ex
+    semper. Quisque justo nunc, bibendum sit amet dignissim a, ullamcorper eget
+    neque. Proin et leo sit amet elit maximus ultrices.
+  email: krn.ppt@gmail.com
+  phone: +49-152-54907314
+  website: vishvapujara.com
+

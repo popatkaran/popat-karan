@@ -2,8 +2,9 @@
 slug: '/notes/github'
 date: '2019-05-04'
 title: 'GitHub'
-category: 'Knowledge Base'
+category: 'github'
 type: 'professional'
+image: '../../images/github-mark.png'
 order: 6
 ---
 
@@ -24,5 +25,5 @@ order: 6
   `git init -b main`
 - Stage and commit all the files in your project.
   `git add README.md && git commit -m "initial commit with README"`
-- To create a repository for your project on GitHub, use the ``gh repo create` subcommand.
+- To create a repository for your project on GitHub, use the `gh repo create` subcommand.
 - Follow the interactive prompts. To add the remote and push the repository, confirm yes when asked to add the remote and push the commits to the current branch.

@@ -2,8 +2,9 @@
 slug: '/notes/terraform'
 date: '2019-05-04'
 title: 'Terraform'
-category: 'Knowledge Base'
+category: 'terraform'
 type: 'professional'
+image: '../../../images/terraform.png'
 order: 1
 ---
 

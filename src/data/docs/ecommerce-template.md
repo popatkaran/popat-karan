@@ -2,8 +2,9 @@
 slug: '/notes/ecommerce/template'
 date: '2019-05-04'
 title: 'E-Commerce'
-category: 'Knowledge Base'
+category: 'e-commerce'
 type: 'professional'
+image: '../../images/logo-dark-x.png'
 order: 6
 ---
 

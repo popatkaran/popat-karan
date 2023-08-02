@@ -2,8 +2,9 @@
 slug: '/notes/netflix-type-code'
 date: '2019-05-04'
 title: 'Netflix Type Code'
-category: 'Entertainment'
+category: 'entertainment'
 type: 'personal'
+image: '../../images/logo-dark-x.png'
 order: 6
 ---
 

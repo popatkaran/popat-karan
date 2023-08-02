@@ -1,0 +1,40 @@
+.card.spryker {
+  border-image-source: linear-gradient(to bottom right, #46bea0, transparent);
+}
+
+.card.terraform {
+  border-image-source: linear-gradient(to bottom right, #7B42BC, transparent);
+}
+
+.card.sap_hybris {
+  border-image-source: linear-gradient(to bottom right, #EFAE2C, transparent);
+}
+
+.card.github {
+  border-image-source: linear-gradient(to bottom right, #333333, transparent);
+}
+
+.card.postman {
+  border-image-source: linear-gradient(to bottom right, #F36C36, transparent);
+}
+
+.card.cybersecurity {
+  border-image-source: linear-gradient(to bottom right, var(--black), transparent);
+}
+
+.card.spryker:hover,
+.card.terraform:hover,
+.card.sap_hybris:hover,
+.card.github:hover,
+.card.postman:hover,
+.card.cybersecurity:hover {
+  border-image-source: linear-gradient(to bottom right, transparent, var(--secondary));
+}
+
+.card-img-top {
+  background: var(--white);
+}
+
+.gatsby-image-wrapper {
+  margin: 20px;
+}

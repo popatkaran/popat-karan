@@ -10,7 +10,7 @@
 }
 
 #home-intro .brand-tagline {
-  color: var(--cyan);
+  color: var(--secondary);
   margin: 48px 0;
   font-size: 24px;
   font-weight: 600;

@@ -2,8 +2,9 @@
 slug: "/spryker/training/zed-ui"
 date: "2019-05-04"
 title: "Zed UI"
-category: "Spryker Tutorials"
+category: "spryker"
 type: "professional"
+image: '../../../images/platforms/banner-spryker.png'
 order: 999
 ---
 

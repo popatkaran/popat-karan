@@ -2,7 +2,7 @@
   text-align: center;
   left: 0;
   bottom: 0;
-  background-color: var(--dark-background);
+  background-color: var(--primary);
   color: white;
   position: relative;
 }
@@ -29,7 +29,7 @@
 
 .footer a {
   text-transform: uppercase;
-  color: var(--background);
+  color: var(--white);
 }
 
 .copyright {
@@ -37,17 +37,13 @@
   margin-bottom: var(--margin-single);
 }
 
-.copyright-text {
-  text-transform: uppercase;
+/* .copyright a {
+  color: var(--secondary);
 }
 
-.copyright-text a {
-  color: var(--cyan);
-}
-
-.copyright-text a:hover {
-  color: var(--background);
-}
+.copyright a:hover {
+  color: var(--white);
+} */
 
 @media (max-width: 575px) {
   .footer {

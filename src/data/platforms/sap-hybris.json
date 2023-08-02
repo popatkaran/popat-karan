@@ -7,20 +7,20 @@
   "why": "This is a placeholder for description about why to use SAP Commerce(Hybris).",
   "features": [
     {
-      "title": "feature - 1",
-      "description": "This is a placeholder of SAP Commerce(Hybris) feature 1."
+      "title": "Modular Architecture for Flexible Customization",
+      "description": "SAP Hybris provides a powerful extension framework that allows developers to build custom modules and extensions to enhance the platform's functionality. This feature enables businesses to integrate additional capabilities or third-party systems into their e-commerce websites."
     },
     {
-      "title": "feature - 2",
-      "description": "This is a placeholder of SAP Commerce(Hybris) feature 2."
+      "title": "Omni-Channel Commerce for Seamless Customer Journey",
+      "description": "SAP Hybris provides integration with various channels, including web, mobile, call centers, and point-of-sale systems, allowing businesses to create a cohesive omni-channel experience. Additionally, the platform offers features like order management, inventory synchronization, and personalized marketing campaigns to support omni-channel operations."
     },
     {
-      "title": "feature - 3",
-      "description": "This is a placeholder of SAP Commerce(Hybris) feature 3."
+      "title": "Scalable Architecture for High-Performance Websites",
+      "description": "SAP Hybris leverages modern technologies, such as microservices and containerization, to achieve scalability and high performance. The platform also provides features like caching, load balancing, and distributed processing, which help optimize website performance and ensure smooth user experiences."
     },
     {
-      "title": "feature - 4",
-      "description": "This is a placeholder of SAP Commerce(Hybris) feature 4."
+      "title": "Comprehensive Analytics for Data-Driven Insights",
+      "description": "SAP Hybris integrates with SAP Analytics Cloud, a powerful analytics platform that provides advanced visualization and reporting capabilities. This integration allows businesses to generate in-depth reports, perform complex data analysis, and gain a holistic view of their e-commerce performance. Additionally, the platform offers real-time monitoring and alerting features to ensure proactive management of the online store."
     }
   ],
   "arch_description": "This is a placeholder of Spryker Architecture description.",

@@ -1,9 +1,9 @@
 pre code {
-    color: var(--background);
+    color: var(--white);
 }
 
 pre {
-    background: var(--background-pre);
+    background: var(--black);
     page-break-inside: avoid;
     padding: 1em 1.5em;
     word-wrap: break-word;

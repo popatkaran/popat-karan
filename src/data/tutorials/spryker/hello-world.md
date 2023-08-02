@@ -3,9 +3,10 @@ slug: "/spryker/training/hello-world"
 description: The tutorial describes how to display a text string on the page in the browser by adding a new Yves module.
 date: "2019-05-04"
 title: "Hello World"
-category: "Spryker Tutorials"
+category: "spryker"
 type: "professional"
-order: 1
+image: '../../../images/platforms/banner-spryker.png'
+order: 0
 ---
 
 ### Objective

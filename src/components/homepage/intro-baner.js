@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Image, Row } from 'react-bootstrap'
 
-import Logo from '../../images/logo-dark-x.png'
+import Logo from '../../images/logo-dark-x-primary.png'
 
 export default function IntroBanenr({ data }) {
   var homeIntroRowClass = ''

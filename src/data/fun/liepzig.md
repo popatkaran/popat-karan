@@ -2,7 +2,8 @@
 slug: "/travel/germany/liepzig"
 date: "2019-04-15"
 title: "Liepzig"
-category: "Travel | Germany"
+category: "travel"
+image: '../../images/logo-dark-x.png'
 type: "personal"
 order: 2
 ---

@@ -7,20 +7,20 @@
   "why": "This is a placeholder for description about why to use CommerceTools.",
   "features": [
     {
-      "title": "feature - 1",
-      "description": "This is a placeholder of CommerceTools feature 1."
+      "title": "Headless Commerce for Flexibility and Innovation",
+      "description": "CommerceTools provides robust APIs that facilitate seamless integration with any front-end system, including web, mobile, IoT devices, voice assistants, and more. This headless architecture allows for rapid development and deployment of custom front-end experiences, ensuring a dynamic and adaptable e-commerce ecosystem."
     },
     {
-      "title": "feature - 2",
-      "description": "This is a placeholder of CommerceTools feature 2."
+      "title": "Agile Development and Scalability with Microservices",
+      "description": "CommerceTools' microservices architecture enables businesses to add or remove services as needed, ensuring flexibility and modularity. The platform leverages containerization technologies like Docker and orchestration tools like Kubernetes for efficient management and deployment of microservices, enhancing scalability and performance."
     },
     {
-      "title": "feature - 3",
-      "description": "This is a placeholder of CommerceTools feature 3."
+      "title": "Cloud-Native Architecture for Efficiency and Scalability",
+      "description": "CommerceTools provides a comprehensive set of RESTful APIs, enabling businesses to connect and interact with the platform's services effortlessly. The cloud-native architecture allows businesses to leverage the scalability and reliability of cloud providers, such as AWS or Google Cloud Platform, while benefiting from features like auto-scaling, load balancing, and high availability."
     },
     {
-      "title": "feature - 4",
-      "description": "This is a placeholder of CommerceTools feature 4."
+      "title": "Highly Extensible Platform for Tailored Solutions",
+      "description": "CommerceTools provides a robust set of SDKs (Software Development Kits), libraries, and documentation that enable developers to extend the platform's functionality. The platform supports custom logic implementation, integration with external systems, and the creation of new services or modules, ensuring businesses can build unique and innovative e-commerce experiences."
     }
   ],
   "arch_description": "This is a placeholder of Spryker Architecture description.",

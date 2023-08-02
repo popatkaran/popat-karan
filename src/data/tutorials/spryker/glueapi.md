@@ -2,8 +2,9 @@
 slug: "/spryker/training/glue-api"
 date: "2019-05-04"
 title: "Glue API"
-category: "Spryker Tutorials"
+category: "spryker"
 type: "professional"
+image: '../../../images/platforms/banner-spryker.png'
 order: 5
 ---
 

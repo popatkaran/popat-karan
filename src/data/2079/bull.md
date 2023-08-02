@@ -2,8 +2,9 @@
 slug: '/horoscope-2079/bull'
 title: 'Bull'
 date: '24.07.1995'
-category: 'Horoscope 2079'
+category: 'horoscope_2079'
 type: 'personal'
+image: '../../images/logo-dark-x.png'
 order: 1
 ---
 
