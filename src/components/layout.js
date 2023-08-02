@@ -30,11 +30,12 @@ const Layout = ({ children }) => {
   const toggleTheme = () => {
     setTheme((ct) => (ct === "light" ? "dark" : "light"))
   }
-  if (typeof window !== `undefined`) {
-    React.useEffect(() => {
+
+  React.useEffect(() => {
+    if (typeof window !== `undefined`) {
       window.localStorage.setItem('theme', theme);
-    }, [theme]);
-  }
+    }
+  }, [theme]);
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>

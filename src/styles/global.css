@@ -7,13 +7,13 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 
 :root {
-  --background: #fefefe;
-  --dark-background: #101010;
-  --text: #121212;
-  --light-text: #fefefe;
+  --background: #F9f9f9;
+  --dark-background: #181818;
+  --text: #333333;
+  --light-text: #cdcdcd;
   --primary: #1d65cd;
   --secondary: #07e9ae;
-  --white: #fefefe;
+  --white: #f9f9f9;
   --black: #282828;
   --dark-background-muted: #134488;
   --breakpoint-xs: 0;
