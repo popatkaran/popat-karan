@@ -97,7 +97,7 @@
       "description":"Earners of this credential are developers who are beginning their career as a Adobe Commerce Developer and have the skills and knowledge of Magento 2 in the areas of UI modifications, database changes, admin modifications, customizations, catalog and checkout structure, and functionality changes."
     },
     {
-      "picture":"https://images.credly.com/size/340x340/images/7b357876-2835-4dcf-a5b7-cc21d9e608ff/image.png",
+      "picture":"https://images.credly.com/size/340x340/images/180a8dcc-2548-418b-887b-ce224d66e936/image.png",
       "title":"Technical Essentials of SAP Commerce Cloud",
       "link":"https://www.credly.com/badges/f00b6340-8cb3-4fb1-ba03-40c470817259",
       "description":"This Record of Achievement validates that the candidate has successfully completed the Learning Journey on Foundational Level for developers and consultants. The earner understands the fundamental technical aspects of SAP Commerce Cloud and is able to provide configuration into SAP Commerce Cloud. The candidate is also able to develop and customize the basic modules of SAP Commerce Cloud."
@@ -106,32 +106,6 @@
       "picture":"https://images.credly.com/size/340x340/images/2784d0d8-327c-406f-971e-9f0e15097003/image.png",
       "title":"AWS Cloud Quest: Cloud Practitioner",
       "link":"https://www.credly.com/badges/9560176f-71c9-4c01-822d-2f676cf90a9d",
-      "description":"Earners of this badge have demonstrated basic solution building knowledge using AWS services and have a fundamental understanding of AWS Cloud concepts. Badge earners have acquired hands-on experience with compute, networking, database and security services."
-    }
-  ],
-  "platforms":[
-    {
-      "picture":"https://raw.githubusercontent.com/popatkaran/assets/main/spryker.png",
-      "title":"Spryker",
-      "link":"/platforms/spryker/",
-      "description":"Enim consequat veniam consectetur excepteur aute nulla ex commodo id minim. Ea nostrud incididunt ullamco irure proident ad duis. Magna sit irure irure cillum eu sint. Ea non adipisicing ut labore incididunt consectetur eu elit irure tempor voluptate reprehenderit."
-    },
-    {
-      "picture":"https://raw.githubusercontent.com/popatkaran/assets/main/adobe-commerce.png",
-      "title":"Adobe Commerce (Magento)",
-      "link":"/platforms/adobe-commerce/",
-      "description":"Earners of this credential are developers who are beginning their career as a Adobe Commerce Developer and have the skills and knowledge of Magento 2 in the areas of UI modifications, database changes, admin modifications, customizations, catalog and checkout structure, and functionality changes."
-    },
-    {
-      "picture":"https://raw.githubusercontent.com/popatkaran/assets/main/commercetools.png",
-      "title":"Commerce Tools",
-      "link":"/platforms/commercetools/",
-      "description":"This Record of Achievement validates that the candidate has successfully completed the Learning Journey on Foundational Level for developers and consultants. The earner understands the fundamental technical aspects of SAP Commerce Cloud and is able to provide configuration into SAP Commerce Cloud. The candidate is also able to develop and customize the basic modules of SAP Commerce Cloud."
-    },
-    {
-      "picture":"https://raw.githubusercontent.com/popatkaran/assets/main/sap-hybris.png",
-      "title":"SAP Hybris",
-      "link":"/platforms/sap-hybris/",
       "description":"Earners of this badge have demonstrated basic solution building knowledge using AWS services and have a fundamental understanding of AWS Cloud concepts. Badge earners have acquired hands-on experience with compute, networking, database and security services."
     }
   ],
