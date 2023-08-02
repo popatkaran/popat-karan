@@ -24,16 +24,18 @@ const Layout = ({ children }) => {
     }
   `)
 
-  let initialTheme = (window.localStorage.getItem('theme') != null) ? window.localStorage.getItem('theme') : ((new Date().getHours() > 16) ? "dark" : "light")
+  let initialTheme = (typeof window !== `undefined` && window.localStorage.getItem('theme') != null) ? window.localStorage.getItem('theme') : ((new Date().getHours() > 16) ? "dark" : "light")
   const [theme, setTheme] = React.useState(initialTheme)
 
   const toggleTheme = () => {
     setTheme((ct) => (ct === "light" ? "dark" : "light"))
   }
+  if (typeof window !== `undefined`) {
+    React.useEffect(() => {
+      window.localStorage.setItem('theme', theme);
+    }, [theme]);
+  }
 
-  React.useEffect(() => {
-    window.localStorage.setItem('theme', theme);
-  }, [theme]);
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <Container className="container-fluid p-0" id={theme}>
