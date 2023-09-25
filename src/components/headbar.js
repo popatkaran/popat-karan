@@ -7,7 +7,7 @@ import { Image } from "react-bootstrap";
 
 import navLinks from '../data/menu-links.json'
 import '../styles/components/headbar.css'
-import siteLogo from '../images/logo-bg-v3.png'
+import siteLogo from '../images/logo-bg-v4.png'
 import NavbarOffcanvas from "react-bootstrap/esm/NavbarOffcanvas";
 import ReactSwitch from "react-switch";
 import { ThemeContext } from "./layout";
