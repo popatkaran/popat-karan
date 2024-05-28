@@ -1,0 +1,44 @@
+[
+  {
+    "key": "facebook",
+    "name": "Facebook",
+    "profile_url": "https://www.facebook.com/karan-popat/",
+    "page_url": "https://www.facebook.com/pages/karan-popat/"
+  },
+  {
+    "key": "instagram",
+    "name": "Instagram",
+    "profile_url": "https://www.instagram.com/karan-popat/",
+    "page_url": null
+  },
+  {
+    "key": "twitter",
+    "name": "Twitter",
+    "profile_url": "https://www.twitter.com/karan-popat/",
+    "page_url": null
+  },
+  {
+    "key": "g_mail",
+    "name": "GMail",
+    "profile_url": "https://www.twitter.com/karan-popat/",
+    "page_url": null
+  },
+  {
+    "key": "g_drive",
+    "name": "Google Drive",
+    "profile_url": "https://www.twitter.com/karan-popat/",
+    "page_url": null
+  },
+  {
+    "key": "g_slides",
+    "name": "Google Slides",
+    "profile_url": "https://www.twitter.com/karan-popat/",
+    "page_url": null
+  },
+  {
+    "key": "g_sheets",
+    "name": "Google Sheets",
+    "profile_url": "https://www.twitter.com/karan-popat/",
+    "page_url": null
+  }
+]

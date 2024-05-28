@@ -1,0 +1,14 @@
+[
+  {
+    "timezone": "Berlin/Germany",
+    "title": "Berlin, Germany",
+    "onDashboard": true,
+    "order": 0
+  },
+  {
+    "timezone": "Asia/Calcutta",
+    "title": "Ahmedabad, India",
+    "onDashboard": false,
+    "order": 1
+  }
+]

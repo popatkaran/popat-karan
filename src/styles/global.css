@@ -7,15 +7,15 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 
 :root {
-  --background: #fefefe;
+  --background: #ffffff;
   --dark-background: #0f0f0f;
   --text: #333333;
   --light-text: #cdcdcd;
-  /* --primary: #1d65cd; */
-  --primary: #5483ff;
-  /* --secondary: #07e9ae; */
-  --secondary: #00f1af;
-  --white: #fefefe;
+  /* --primary: #4169e1; */
+  --primary: #4169e1;
+  /* --secondary: #41e1b9; */
+  --secondary: #4FD4C6;
+  --white: #ffffff;
   --black: #0f0f0f;
   --dark-background-muted: #134488;
   --breakpoint-xs: 0;

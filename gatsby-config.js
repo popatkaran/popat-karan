@@ -17,6 +17,8 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-transformer-remark',
     `gatsby-transformer-json`,
+    'react-live-clock',
+    'react-open-weather',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
