@@ -3,6 +3,7 @@ slug: "/spryker/training/data-import"
 date: "2019-05-04"
 title: "Database Table"
 category: "spryker"
+category_key: 'spryker'
 type: "professional"
 image: '../../../images/platforms/banner-spryker.png'
 order: 2

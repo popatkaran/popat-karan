@@ -1,8 +1,9 @@
 ---
-slug: '/notes/ecommerce/template'
+slug: '/article/ecommerce/template'
 date: '2019-05-04'
-title: 'E-Commerce'
-category: 'e-commerce'
+title: 'eCommerce'
+category: 'eCommerce'
+category_key: 'e_commerce'
 type: 'professional'
 image: '../../images/logo-dark-x.png'
 order: 6

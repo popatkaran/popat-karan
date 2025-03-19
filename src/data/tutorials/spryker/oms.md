@@ -3,6 +3,7 @@ slug: "/spryker/training/oms"
 date: "2019-05-04"
 title: "OMS"
 category: "spryker"
+category_key: 'spryker'
 type: "professional"
 image: '../../../images/platforms/banner-spryker.png'
 order: 999
@@ -188,6 +189,7 @@ xsi:schemaLocation="spryker:oms-01 http://static.spryker.com/oms-01.xsd">
 -            <event name="pay" onEnter="true" />
         </events>
     </process>
+
 </statemachine>
 Finally, add rest of the transitions and events.
 
@@ -262,6 +264,7 @@ xsi:schemaLocation="spryker:oms-01 http://static.spryker.com/oms-01.xsd">
 -            <event name="close after refund" onEnter="true" />
         </events>
     </process>
+
 </statemachine>
 The skeleton of the order process is now done. Refresh the graph and check your process.
 
@@ -294,7 +297,7 @@ xsi:schemaLocation="spryker:oms-01 http://static.spryker.com/oms-01.xsd">
 
 -            <event name="pay" onEnter="true" />
 
-*            <event name="pay" onEnter="true" command="Demo/Pay" />
+-            <event name="pay" onEnter="true" command="Demo/Pay" />
             <event name="ship" manual="true" />
             <event name="return" manual="true" />
             <event name="refund" onEnter="true" />
@@ -302,6 +305,7 @@ xsi:schemaLocation="spryker:oms-01 http://static.spryker.com/oms-01.xsd">
             <event name="close after refund" onEnter="true" />
         </events>
     </process>
+
 </statemachine>
 Refresh the graph again. You will see that the Command is added with the label “not implemented”. This means that the PHP implementation is not hooked yet
 
@@ -358,14 +362,14 @@ class OmsDependencyProvider extends SprykerOmsDependencyProvider
     {
         $container->extend(self::COMMAND_PLUGINS, function (CommandCollectionInterface $commandCollection) {
             //...
-+            $commandCollection->add(new PayCommand(), 'Demo/Pay');
++ $commandCollection->add(new PayCommand(), 'Demo/Pay');
 
             return $commandCollection;
         });
 
         return $container;
     }
-    
+
     //...
 }
 Refresh the graph, you should not see the “not implement” label anymore meaning that the state machine recognizes the command by now.
@@ -392,7 +396,7 @@ xsi:schemaLocation="spryker:oms-01 http://static.spryker.com/oms-01.xsd">
 
         <transitions>
 
-*            <transition>
+-            <transition>
 
 -            <transition condition="Demo/IsAuthorized">
                 <source>new</source>
@@ -462,7 +466,7 @@ class OmsDependencyProvider extends SprykerOmsDependencyProvider
         $container->extend(OmsDependencyProvider::CONDITION_PLUGINS, function (ConditionCollectionInterface $conditionCollection) {
             $conditionCollection
                 //...
-+                ->add(new IsAuthorizedCondition(), 'Demo/IsAuthorized');
++ ->add(new IsAuthorizedCondition(), 'Demo/IsAuthorized');
 
             return $conditionCollection;
         });
@@ -479,8 +483,8 @@ The final step is to use the state machine by hooking it into the checkout. To d
 config/Shared/common/config_oms-development.php
 $config[SalesConstants::PAYMENT_METHOD_STATEMACHINE_MAPPING] = [
     //...
--    DummyPaymentConfig::PAYMENT_METHOD_INVOICE => 'DummyPayment01',
-+    DummyPaymentConfig::PAYMENT_METHOD_INVOICE => 'Demo01',
+- DummyPaymentConfig::PAYMENT_METHOD_INVOICE => 'DummyPayment01',
++ DummyPaymentConfig::PAYMENT_METHOD_INVOICE => 'Demo01',
     //...
 ];
 4. Test the State Machine

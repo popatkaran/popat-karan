@@ -3,6 +3,7 @@ slug: "/spryker/training/cms"
 date: "2019-05-04"
 title: "Hands on CMS"
 category: "spryker"
+category_key: 'spryker'
 type: "professional"
 image: '../../../images/platforms/banner-spryker.png'
 order: 6
@@ -17,9 +18,9 @@ src/Pyz/Shared/Cms/Theme/default/templates/antelope/savannah.twig
 
 {% define data = {
 title: _view.pageTitle | default('global.spryker.shop' | trans),
-metaTitle: _view.pageTitle | default('global.spryker.shop' | trans),
+metaTitle:_view.pageTitle | default('global.spryker.shop' | trans),
 metaDescription: _view.pageDescription | default(''),
-metaKeywords: _view.pageKeywords | default('')
+metaKeywords:_view.pageKeywords | default('')
 } %}
 
 {% block title %}
@@ -240,9 +241,9 @@ class CmsContentWidgetDependencyProvider extends SprykerCmsContentWidgetDependen
     {
         return [
             //...
-+            CmsContentWidgetAntelopeConnectorConfigurationProvider::FUNCTION_NAME => new AntelopeContentWidgetPlugin(
-+                new CmsContentWidgetAntelopeConnectorConfigurationProvider()
-+            ),
++ CmsContentWidgetAntelopeConnectorConfigurationProvider::FUNCTION_NAME => new AntelopeContentWidgetPlugin(
++ new CmsContentWidgetAntelopeConnectorConfigurationProvider()
++ ),
         ];
 src/Pyz/Zed/CmsContentWidget/CmsContentWidgetConfig.php
 <?php
@@ -262,7 +263,7 @@ class CmsContentWidgetConfig extends SprykerCmsContentConfig
     public function getCmsContentWidgetConfigurationProviders()
     {
         return [
-+            //...
-+            CmsContentWidgetAntelopeConnectorConfigurationProvider::FUNCTION_NAME => new CmsContentWidgetAntelopeConnectorConfigurationProvider(),
++ //...
++ CmsContentWidgetAntelopeConnectorConfigurationProvider::FUNCTION_NAME => new CmsContentWidgetAntelopeConnectorConfigurationProvider(),
         ];
 You can now go back to the Zed UI and add your Antelope CMS widget to your savannah page. Below the WYSIWYG editor box is a description of how to do that. Save AND publish! Then, visit Yves /safari-park, and cheer for your Antelope!

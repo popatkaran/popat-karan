@@ -1,8 +1,9 @@
 ---
-slug: '/notes/sap'
+slug: '/article/sap'
 date: '2019-05-04'
 title: 'SAP'
-category: 'sap_hybris'
+category: 'SAP Hybris'
+category_key: 'sap_hybris'
 type: 'professional'
 image: '../../images/platforms/banner-sap-hybris.png'
 order: 6
@@ -99,7 +100,7 @@ https://localhost:9002/platform/extensions
 - place your ImpEx in text files in the `/resources/impex` directory of your extension
 - **Essential data ImpEx file** Contains fundamental reference data that is required by your extension. Essential data is always imported when you initialize the platform with your extension. Essential data ImpEx files have names in the form `essentialdata*.impex`.
 - **Project data ImpEx file** Contains data that is optional your extension, such as sample data. Project data is included only when you check the project data checkbox for your extension in the Administration Console during initialization. Project data ImpEx files have names in the form `projectdata*.impex`.
-- to import Essential and Project data > https://localhost:9002/platform/init
+- to import Essential and Project data > <https://localhost:9002/platform/init>
 - register programmatic import Java class in `<HYBRIS_HOME_DIR>/hybris/bin/custom/concerttours/resources/concerttours-spring.xml`
 
 ## xmls
@@ -142,7 +143,7 @@ cd /Users/<user_name>/projects/sap/<HYBRIS_HOME_DIR>/hybris/bin/platform; ant un
 
 ## Recipe CX
 
-> B2C & B2B Accelerators with OMS (formerly b2c_b2b_acc_oms). For Kyma integration + ApiRegistry, event sending is turned off by default by `apiregistryservices.events.exporting=false` property. Optionally and before initialization, `deployment.api.endpoint` property should be set to a server url reachable by kyma instead of https://localhost:9002.
+> B2C & B2B Accelerators with OMS (formerly b2c_b2b_acc_oms). For Kyma integration + ApiRegistry, event sending is turned off by default by `apiregistryservices.events.exporting=false` property. Optionally and before initialization, `deployment.api.endpoint` property should be set to a server url reachable by kyma instead of <https://localhost:9002>.
 
 > Platform Setup:
 
@@ -182,6 +183,6 @@ cd /Users/<user_name>/projects/sap/hybris-r1/installer; ./install.sh -r cx start
 
 ## Youtube resources
 
-- https://www.youtube.com/playlist?list=PLzz42D-7Atw4n1s0mO3RwEvujQFAoxqAX
-- https://www.youtube.com/playlist?list=PLw7h5qVWrsNxjI8kbPr6nCo0l1p0253K6
-- https://www.youtube.com/@chennarrrs3886
+- <https://www.youtube.com/playlist?list=PLzz42D-7Atw4n1s0mO3RwEvujQFAoxqAX>
+- <https://www.youtube.com/playlist?list=PLw7h5qVWrsNxjI8kbPr6nCo0l1p0253K6>
+- <https://www.youtube.com/@chennarrrs3886>

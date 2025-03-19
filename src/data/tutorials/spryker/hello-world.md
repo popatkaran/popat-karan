@@ -4,6 +4,7 @@ description: The tutorial describes how to display a text string on the page in 
 date: "2019-05-04"
 title: "Hello World"
 category: "spryker"
+category_key: 'spryker'
 type: "professional"
 image: '../../../images/platforms/banner-spryker.png'
 order: 0
@@ -34,12 +35,12 @@ use Symfony\Component\HttpFoundation\Request;
 
 class IndexController extends AbstractController
 {
-	/**
+ /**
     * @param Request $request
-	*
-	* @return \Spryker\Yves\Kernel\View\View
-	*/
-	public function indexAction(Request $request)
+ *
+ * @return \Spryker\Yves\Kernel\View\View
+ */
+ public function indexAction(Request $request)
     {
         $data = ['helloWorld' => 'Hello World!'];
 
@@ -67,10 +68,10 @@ use Spryker\Yves\Router\Route\RouteCollection;
 
 class HelloWorldRouteProviderPlugin extends AbstractRouteProviderPlugin
 {
-	protected const ROUTE_HELLO_WORLD = 'hello-world';
+ protected const ROUTE_HELLO_WORLD = 'hello-world';
 
-	/**
-	 * @param \Spryker\Yves\Router\Route\RouteCollection $routeCollection
+ /**
+  * @param \Spryker\Yves\Router\Route\RouteCollection $routeCollection
          *
          * @return \Spryker\Yves\Router\Route\RouteCollection
          */

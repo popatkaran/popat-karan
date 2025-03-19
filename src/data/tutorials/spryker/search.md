@@ -3,6 +3,7 @@ slug: "/spryker/training/search"
 date: "2019-05-04"
 title: "Search"
 category: "spryker"
+category_key: 'spryker'
 type: "professional"
 image: '../../../images/platforms/banner-spryker.png'
 order: 998
@@ -389,7 +390,7 @@ namespace Pyz\Yves\Router;
 class RouterDependencyProvider extends SprykerRouterDependencyProvider
 {
     //...
-    
+
     /**
      * @return \Spryker\Yves\RouterExtension\Dependency\Plugin\RouteProviderPluginInterface[]
      */
@@ -397,7 +398,7 @@ class RouterDependencyProvider extends SprykerRouterDependencyProvider
     {
         return [
             //...
-+            new AntelopeRouteProviderPlugin(),
++ new AntelopeRouteProviderPlugin(),
         ];
     }
 Now go to Yves and call /antelope/<NAME> and see the members of your herd in freedom!

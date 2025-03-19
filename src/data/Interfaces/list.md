@@ -3,7 +3,8 @@ slug: "/interfaces"
 date: "2024-01-17"
 title: "Interfaces"
 description: "Lisf of interfaces"
-category: "interfaces"
+category: "Interfaces"
+category_key: 'interfaces'
 type: "professional"
 image: '../../images/api-interface.png'
 order: 7

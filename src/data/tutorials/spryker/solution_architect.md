@@ -3,6 +3,7 @@ slug: '/spryker/training/solution_architect'
 date: '2023-03-01'
 title: 'Solution Architect'
 category: "spryker"
+category_key: 'spryker'
 type: 'professional'
 image: '../../../images/platforms/banner-spryker.png'
 order: 0
@@ -24,7 +25,7 @@ Here, you will be presented with instructions on how to get the most out of this
 
 > Explains the difference between Enterprise, Solution and Technical Architects. Determines key job responsibilities of a Spryker Solution Architect.
 
-### In the IT world you can meet different architects:
+### In the IT world you can meet different architects
 
 - Technical Architects
 - Solution Architects
@@ -39,7 +40,7 @@ The general difference is:
 - Solution Architects investigate a specific issue or challenge and offer a solution.
 - Technical Architects translate a solution into an integrated system, and provide in-depth technical expertise of hardware, software needs, etc.
 
-### Read more about each type of architects in the following documentation:
+### Read more about each type of architects in the following documentation
 
 - [Differences between Enterprise Architects, Solution Architects and Technical Architects](https://www.leanix.net/en/wiki/ea/enterprise-architect-vs-solution-architect-vs-technical-architect-whats-the-difference#:~:text=While%20the%20enterprise%20architect%20focuses,implementation%20of%20a%20new%20application)
 - [Enterprise Architect vs. Solution Architect vs. Technical Architect](https://www.interviewkickstart.com/blog/enterprise-architect-vs-solution-architect-vs-technical-architect#:~:text=An%20enterprise%20architect%20is%20more,designing%20and%20implementing%20technical%20solutions.)

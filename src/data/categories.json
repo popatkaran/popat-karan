@@ -1,0 +1,57 @@
+[
+    {
+        "category_key": "spryker",
+        "title": "Spryker",
+        "locale": "en_EN"
+    },
+    {
+        "category_key": "cybersecurity",
+        "title": "Cybersecurity",
+        "locale": "en_EN"
+    },
+    {
+        "category_key": "e-commerce",
+        "title": "e Commerce",
+        "locale": "en_EN"
+    },
+    {
+        "category_key": "entertainment",
+        "title": "Entertainment",
+        "locale": "en_EN"
+    },
+    {
+        "category_key": "github",
+        "title": "Git",
+        "locale": "en_EN"
+    },
+    {
+        "category_key": "horoscope",
+        "title": "Horoscope",
+        "locale": "en_EN"
+    },
+    {
+        "category_key": "interfaces",
+        "title": "Interfaces",
+        "locale": "en_EN"
+    },
+    {
+        "category_key": "postman",
+        "title": "Postman",
+        "locale": "en_EN"
+    },
+    {
+        "category_key": "sap_hybris",
+        "title": "SAP Hybris",
+        "locale": "en_EN"
+    },
+    {
+        "category_key": "software_architecture",
+        "title": "Software Architecture",
+        "locale": "en_EN"
+    },
+    {
+        "category_key": "terraform",
+        "title": "Terraform",
+        "locale": "en_EN"
+    }
+]

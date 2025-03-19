@@ -4,6 +4,7 @@ date: "2024-01-17"
 title: "Interfaces"
 description: "MANPINT003 - Product Import"
 category: "interfaces"
+category_key: 'interfaces'
 type: "professional"
 image: '../../images/api-interface.png'
 order: 7

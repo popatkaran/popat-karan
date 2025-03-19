@@ -12,9 +12,11 @@
   --text: #333333;
   --light-text: #cdcdcd;
   /* --primary: #4169e1; */
-  --primary: #4169e1;
+  /* --primary: #4169e1; */
+  --primary: #000000;
   /* --secondary: #41e1b9; */
-  --secondary: #4FD4C6;
+  /* --secondary: #4FD4C6; */
+  --secondary: #00ff00;
   --white: #ffffff;
   --black: #0f0f0f;
   --dark-background-muted: #134488;
@@ -262,6 +264,20 @@ em {
   transform: skewX(-6deg);
   display: inline-block;
   color: var(--background);
+}
+
+.back-link {
+  float: right;
+  margin: var(--margin-single) 0 var(--margin-single) var(--margin-single);
+  padding: var(--padding-single);
+  border: 1px solid var(--primary);
+}
+
+.back-link:hover {
+  float: right;
+  margin: var(--margin-single) 0 var(--margin-single) var(--margin-single);
+  padding: var(--padding-single);
+  border: 1px solid var(--secondary);
 }
 
 /** ELEMENTS TO IMLEMENT **/

@@ -1,8 +1,9 @@
 ---
-slug: '/notes/github'
+slug: '/article/github'
 date: '2019-05-04'
 title: 'GitHub'
 category: 'github'
+category_key: 'github'
 type: 'professional'
 image: '../../images/github-mark.png'
 order: 6

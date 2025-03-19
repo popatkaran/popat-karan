@@ -1,9 +1,10 @@
 ---
-slug: "/cybersecurity"
+slug: "/article/cybersecurity"
 date: "2023-07-27"
 title: "Cybersecurity"
 description: "Cybersecurity Series: Five Principles to Follow (and One to Avoid)"
-category: "cybersecurity"
+category: "Cybersecurity"
+category_key: 'cybersecurity'
 type: "professional"
 image: '../../images/cybersecurity.png'
 order: 7
@@ -80,9 +81,8 @@ There are many ways to implement separation of duties, such as:
 * If the secret knowledge is ever revealed, the system can be easily broken.
 * Instead, security should be based on sound cryptographic principles, such as the use of strong algorithms and keys.
 
-
-
 > Additional points
+
 * **Hardening your systems:** Make your systems more secure by removing unnecessary services and hardening the operating system.
 * **Re-certifying users:** Periodically review user access rights to make sure that they still need the access that they have been granted.
 * **Eliminating privilege creep:** Remove access rights from users who no longer need them.
@@ -106,8 +106,8 @@ Here are some examples and scenarios to illustrate the points above:
 
 These are just a few of the cybersecurity principles that you should follow to protect your systems and data. By following these principles, you can make it more difficult for attackers to compromise your systems and steal your data.
 
+---
 
---- 
 ### Confidentiality
 
 > Confidentiality is the quality that information is not disclosed to unauthorized individuals, entities, or processes.
@@ -171,18 +171,16 @@ The best practice for cybersecurity architects is to engage them from the projec
 
 Cybersecurity architects operate in specific domains related to securing the system:
 
-- **Identity and Access Management (IAM)**: Focuses on verifying users' identities and managing their access rights.
-- **Endpoint Security**: Ensures the security of user devices and their trustworthiness within the system.
-- **Network Security**: Protects the network infrastructure and prevents unauthorized access or data breaches.
-- **Application Security**: Secures applications from potential vulnerabilities and attacks.
-- **Data Security**: Ensures the protection and confidentiality of sensitive data stored in the system.
-- **Security Information and Event Management (SIEM)**: Monitors and analyzes security-related events across the system for potential threats or breaches.
-- **Incident Response (IR)**: Involves orchestrating the response to security incidents promptly and efficiently.
+* **Identity and Access Management (IAM)**: Focuses on verifying users' identities and managing their access rights.
+* **Endpoint Security**: Ensures the security of user devices and their trustworthiness within the system.
+* **Network Security**: Protects the network infrastructure and prevents unauthorized access or data breaches.
+* **Application Security**: Secures applications from potential vulnerabilities and attacks.
+* **Data Security**: Ensures the protection and confidentiality of sensitive data stored in the system.
+* **Security Information and Event Management (SIEM)**: Monitors and analyzes security-related events across the system for potential threats or breaches.
+* **Incident Response (IR)**: Involves orchestrating the response to security incidents promptly and efficiently.
 
 > These seven domains constitute the primary focus of a cybersecurity architect, and in the rest of the series, each domain will be explored in more detail.
---- 
-
-
+---
 
 ### Identity and Access Management (IAM): Building a Secure Foundation
 
@@ -191,69 +189,78 @@ Identity and Access Management (IAM) plays a critical role in ensuring the secur
 > The Four As of IAM
 
 **Administration**:
-   - Determine access rights for users and create corresponding accounts.
-   - Establish roles for users based on their business functions, allowing for streamlined access provisioning.
-   - Implement role management to map user groups into IT roles, ensuring efficient access assignment.
-   - Utilize approval processes for granting access rights and maintain an audit trail for accountability.
+
+* Determine access rights for users and create corresponding accounts.
+* Establish roles for users based on their business functions, allowing for streamlined access provisioning.
+* Implement role management to map user groups into IT roles, ensuring efficient access assignment.
+* Utilize approval processes for granting access rights and maintain an audit trail for accountability.
 
 **Authentication**:
-   - Authenticate users to answer the question, "Who are you?"
-   - Employ multi-factor authentication (MFA) with something the user knows, something the user has, and/or something the user is for enhanced security.
-   - Strive for passwordless authentication to reduce reliance on passwords and enhance user experience.
-   - Enable single sign-on (SSO) to provide users with a unified login experience across multiple systems.
+
+* Authenticate users to answer the question, "Who are you?"
+* Employ multi-factor authentication (MFA) with something the user knows, something the user has, and/or something the user is for enhanced security.
+* Strive for passwordless authentication to reduce reliance on passwords and enhance user experience.
+* Enable single sign-on (SSO) to provide users with a unified login experience across multiple systems.
 
 **Authorization**:
-   - Determine what actions users are allowed to perform based on their roles and access rights.
-   - Implement risk-based authorization to assess contextual factors and adjust access privileges accordingly.
-   - Consider factors such as location, request type, amount, and frequency to determine access levels.
-   - Aim to strike a balance between security and usability, allowing appropriate access while mitigating risks.
+
+* Determine what actions users are allowed to perform based on their roles and access rights.
+* Implement risk-based authorization to assess contextual factors and adjust access privileges accordingly.
+* Consider factors such as location, request type, amount, and frequency to determine access levels.
+* Aim to strike a balance between security and usability, allowing appropriate access while mitigating risks.
 
 **Audit**:
-   - Review and validate the accuracy of the previous three As (Administration, Authentication, and Authorization).
-   - Utilize user behavior analytics (UBA) to detect anomalies and potential security breaches.
-   - Maintain comprehensive logs of user activities for accountability and forensic purposes.
-   - Ensure that all access-related actions are monitored and logged to facilitate auditing and incident response.
+
+* Review and validate the accuracy of the previous three As (Administration, Authentication, and Authorization).
+* Utilize user behavior analytics (UBA) to detect anomalies and potential security breaches.
+* Maintain comprehensive logs of user activities for accountability and forensic purposes.
+* Ensure that all access-related actions are monitored and logged to facilitate auditing and incident response.
 
 > IAM Architecture and Integration
 
 **Base Level: Store and Sync**
-- Identify different user groups within the organization (e.g., employees, suppliers, customers).
-- Group users based on business functions (e.g., administrative staff, manufacturing, sales).
-- Store identity information in directories, often using LDAP (Lightweight Directory Access Protocol) as the industry-standard protocol.
-- Consider Active Directory as Microsoft's version of a directory system, commonly used in Windows environments.
-- In a real-world scenario, organizations may have multiple directories, necessitating synchronization capabilities to ensure consistency across systems.
+
+* Identify different user groups within the organization (e.g., employees, suppliers, customers).
+* Group users based on business functions (e.g., administrative staff, manufacturing, sales).
+* Store identity information in directories, often using LDAP (Lightweight Directory Access Protocol) as the industry-standard protocol.
+* Consider Active Directory as Microsoft's version of a directory system, commonly used in Windows environments.
+* In a real-world scenario, organizations may have multiple directories, necessitating synchronization capabilities to ensure consistency across systems.
 
 **Administration and Role Management**
-- Implement identity management or identity governance for administrative tasks.
-- Use role management to map business roles to IT roles for efficient access provisioning.
-- Employ approval workflows to grant access based on predefined roles and access rights.
-- Provision and de-provision user accounts systematically to ensure security and efficiency.
+
+* Implement identity management or identity governance for administrative tasks.
+* Use role management to map business roles to IT roles for efficient access provisioning.
+* Employ approval workflows to grant access based on predefined roles and access rights.
+* Provision and de-provision user accounts systematically to ensure security and efficiency.
 
 **Authentication and Access Management**
-- Utilize multi-factor authentication (MFA) with various factors (something the user knows, has, and is) for enhanced security.
-- Implement single sign-on (SSO) for seamless user access across multiple systems.
-- Consider risk-based authentication to adjust access privileges based on contextual factors.
+
+* Utilize multi-factor authentication (MFA) with various factors (something the user knows, has, and is) for enhanced security.
+* Implement single sign-on (SSO) for seamless user access across multiple systems.
+* Consider risk-based authentication to adjust access privileges based on contextual factors.
 
 **Privileged Access Management (PAM)**
-- Securely manage privileged accounts with unique passwords, avoiding shared account/password practices.
-- Use PAM systems to require users to log in through a centralized platform, granting temporary access to critical systems.
-- Employ session recording to monitor privileged user activities and enhance accountability.
+
+* Securely manage privileged accounts with unique passwords, avoiding shared account/password practices.
+* Use PAM systems to require users to log in through a centralized platform, granting temporary access to critical systems.
+* Employ session recording to monitor privileged user activities and enhance accountability.
 
 > Extending IAM: Federation and Consumer Identity and Access Management (CIAM)
 
 **Federation**
-- Extend IAM to other identity domains, allowing users to access external systems securely.
-- Use industry-standard protocols for federation, enabling secure authentication and authorization across domains.
+
+* Extend IAM to other identity domains, allowing users to access external systems securely.
+* Use industry-standard protocols for federation, enabling secure authentication and authorization across domains.
 
 **Consumer Identity and Access Management (CIAM)**
-- Tailor IAM for customer-facing systems to provide seamless and frictionless access.
-- Prioritize user experience while preserving privacy and security.
-- Streamline access provisioning for customers without compromising data protection.
+
+* Tailor IAM for customer-facing systems to provide seamless and frictionless access.
+* Prioritize user experience while preserving privacy and security.
+* Streamline access provisioning for customers without compromising data protection.
 
 ### Conclusion
 
 IAM is a foundational pillar in ensuring the security and efficiency of an organization's digital ecosystem. By focusing on the four As of IAM - Administration, Authentication, Authorization, and Audit - businesses can build a robust identity management framework. Employing role management, multi-factor authentication, single sign-on, and privileged access management can further enhance security. Federation and CIAM extend IAM's reach, allowing secure access across domains and ensuring a seamless user experience. IAM, when implemented effectively, fortifies an organization's defenses and fosters trust among users and stakeholders.
 
-
 ---
-https://www.youtube.com/watch?v=5uNifnVlBy4&list=PLOspHqNVtKADkWLFt9OcziQF7EatuANSY&index=5
+<https://www.youtube.com/watch?v=5uNifnVlBy4&list=PLOspHqNVtKADkWLFt9OcziQF7EatuANSY&index=5>

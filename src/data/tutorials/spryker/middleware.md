@@ -3,6 +3,7 @@ slug: "/spryker/training/middleware"
 date: "2019-05-04"
 title: "Middleware"
 category: "spryker"
+category_key: 'spryker'
 type: "professional"
 image: '../../../images/platforms/banner-spryker.png'
 order: 9
@@ -51,7 +52,7 @@ class ConsoleDependencyProvider extends SprykerConsoleDependencyProvider
     {
         $commands = [
             //...
-+            new ProcessConsole(),
++ new ProcessConsole(),
         ];
 $ console transfer:generate
 Now we can begin to write our actual functionality.
@@ -100,11 +101,11 @@ class GreyToPink extends AbstractTranslatorFunction implements TranslatorFunctio
 }
 src/Pyz/Zed/AntelopeMiddlewareConnector/Business/Translator/Dictionary/AntelopeDictionary.php
 <?php
- 
+
 namespace Pyz\Zed\AntelopeMiddlewareConnector\Business\Translator\Dictionary;
- 
+
 use SprykerMiddleware\Zed\Process\Business\Translator\Dictionary\AbstractDictionary;
- 
+
 class AntelopeDictionary extends AbstractDictionary
 {
     /**
@@ -123,13 +124,13 @@ In order to have the dictionary available for our plugins, we have to expose it 
 
 src/Pyz/Zed/AntelopeMiddlewareConnector/Business/AntelopeMiddlewareConnectorBusinessFactory.php
 <?php
- 
+
 namespace Pyz\Zed\AntelopeMiddlewareConnector\Business;
- 
+
 use Pyz\Zed\AntelopeMiddlewareConnector\Business\Translator\Dictionary\AntelopeDictionary;
 use Spryker\Zed\Kernel\Business\AbstractBusinessFactory;
 use SprykerMiddleware\Zed\Process\Business\Translator\Dictionary\DictionaryInterface;
- 
+
 class AntelopeMiddlewareConnectorBusinessFactory extends AbstractBusinessFactory
 {
     /**
@@ -142,11 +143,11 @@ class AntelopeMiddlewareConnectorBusinessFactory extends AbstractBusinessFactory
 }
 src/Pyz/Zed/AntelopeMiddlewareConnector/Business/AntelopeMiddlewareConnectorFacadeInterface.php
 <?php
- 
+
 namespace Pyz\Zed\AntelopeMiddlewareConnector\Business;
- 
+
 use Generated\Shared\Transfer\TranslatorConfigTransfer;
- 
+
 /**
  * @method \Pyz\Zed\AntelopeMiddlewareConnector\Business\AntelopeMiddlewareConnectorBusinessFactory getFactory()
  */
@@ -159,12 +160,12 @@ interface AntelopeMiddlewareConnectorFacadeInterface
 }
 src/Pyz/Zed/AntelopeMiddlewareConnector/Business/AntelopeMiddlewareConnectorFacade.php
 <?php
- 
+
 namespace Pyz\Zed\AntelopeMiddlewareConnector\Business;
- 
+
 use Generated\Shared\Transfer\TranslatorConfigTransfer;
 use Spryker\Zed\Kernel\Business\AbstractFacade;
- 
+
 /**
  * @method \Pyz\Zed\AntelopeMiddlewareConnector\Business\AntelopeMiddlewareConnectorBusinessFactory getFactory()
  */
@@ -184,16 +185,16 @@ And wrap it into a StagePlugin (that needs access to the ProcessFacade)
 
 src/Pyz/Zed/AntelopeMiddlewareConnector/AntelopeMiddlewareConnectorDependencyProvider.php
 <?php
- 
+
 namespace Pyz\Zed\AntelopeMiddlewareConnector;
- 
+
 use Spryker\Zed\Kernel\AbstractBundleDependencyProvider;
 use Spryker\Zed\Kernel\Container;
- 
+
 class AntelopeMiddlewareConnectorDependencyProvider extends AbstractBundleDependencyProvider
 {
     public const FACADE_PROCESS = 'FACADE_PROCESS';
- 
+
     /**
      * @param \Spryker\Zed\Kernel\Container $container
      *
@@ -202,10 +203,10 @@ class AntelopeMiddlewareConnectorDependencyProvider extends AbstractBundleDepend
     public function provideCommunicationLayerDependencies(Container $container): Container
     {
         $container = $this->addFacadeProcess($container);
- 
+
         return $container;
     }
- 
+
     /**
      * @param \Spryker\Zed\Kernel\Container $container
      *
@@ -221,13 +222,13 @@ class AntelopeMiddlewareConnectorDependencyProvider extends AbstractBundleDepend
 }
 src/Pyz/Zed/AntelopeMiddlewareConnector/Communication/AntelopeMiddlewareConnectorCommunicationFactory.php
 <?php
- 
+
 namespace Pyz\Zed\AntelopeMiddlewareConnector\Communication;
- 
+
 use Pyz\Zed\AntelopeMiddlewareConnector\AntelopeMiddlewareConnectorDependencyProvider;
 use Spryker\Zed\Kernel\Communication\AbstractCommunicationFactory;
 use SprykerMiddleware\Zed\Process\Business\ProcessFacadeInterface;
- 
+
 class AntelopeMiddlewareConnectorCommunicationFactory extends AbstractCommunicationFactory
 {
     public function getProcessFacade(): ProcessFacadeInterface
@@ -237,16 +238,16 @@ class AntelopeMiddlewareConnectorCommunicationFactory extends AbstractCommunicat
 }
 src/Pyz/Zed/AntelopeMiddlewareConnector/Communication/Plugin/AntelopeTranslationStagePlugin.php
 <?php
- 
+
 namespace Pyz\Zed\AntelopeMiddlewareConnector\Communication\Plugin;
- 
+
 use Generated\Shared\Transfer\TranslatorConfigTransfer;
 use Pyz\Zed\AntelopeMiddlewareConnector\Business\AntelopeMiddlewareConnectorFacadeInterface;
 use Pyz\Zed\AntelopeMiddlewareConnector\Communication\AntelopeMiddlewareConnectorCommunicationFactory;
 use Spryker\Zed\Kernel\Communication\AbstractPlugin;
 use SprykerMiddleware\Shared\Process\Stream\WriteStreamInterface;
 use SprykerMiddleware\Zed\Process\Dependency\Plugin\StagePluginInterface;
- 
+
 /**
  * @method AntelopeMiddlewareConnectorCommunicationFactory getFactory()
  * @method AntelopeMiddlewareConnectorFacadeInterface getFacade()
@@ -254,7 +255,7 @@ use SprykerMiddleware\Zed\Process\Dependency\Plugin\StagePluginInterface;
 class AntelopeTranslationStagePlugin extends AbstractPlugin implements StagePluginInterface
 {
     protected const PLUGIN_NAME = 'AntelopeTranslationStagePlugin';
- 
+
     /**
      * @return \Generated\Shared\Transfer\TranslatorConfigTransfer
      */
@@ -263,7 +264,7 @@ class AntelopeTranslationStagePlugin extends AbstractPlugin implements StagePlug
         return $this->getFacade()
             ->getAntelopeTranslatorConfig();
     }
- 
+
     /**
      * @param mixed $payload
      * @param \SprykerMiddleware\Shared\Process\Stream\WriteStreamInterface $outStream
@@ -277,7 +278,7 @@ class AntelopeTranslationStagePlugin extends AbstractPlugin implements StagePlug
             ->getProcessFacade()
             ->translate($payload, $this->getTranslatorConfig());
     }
- 
+
     /**
      * @return string
      */
@@ -290,17 +291,17 @@ The TranslatorFunction is made available in a different way.
 
 src/Pyz/Zed/AntelopeMiddlewareConnector/Communication/Plugin/TranslatorFunction/GreyToPinkTranslatorFunctionPlugin.php
 <?php
- 
+
 namespace Pyz\Zed\AntelopeMiddlewareConnector\Communication\Plugin\TranslatorFunction;
- 
+
 use Pyz\Zed\AntelopeMiddlewareConnector\Business\Translator\TranslatorFunction\GreyToPink;
 use Spryker\Zed\Kernel\Communication\AbstractPlugin;
 use SprykerMiddleware\Zed\Process\Dependency\Plugin\TranslatorFunction\GenericTranslatorFunctionPluginInterface;
- 
+
 class GreyToPinkTranslatorFunctionPlugin extends AbstractPlugin implements GenericTranslatorFunctionPluginInterface
 {
     protected const NAME = 'GreyToPink';
- 
+
     /**
      * @return string
      */
@@ -308,7 +309,7 @@ class GreyToPinkTranslatorFunctionPlugin extends AbstractPlugin implements Gener
     {
         return static::NAME;
     }
- 
+
     /**
      * @return string
      */
@@ -316,7 +317,7 @@ class GreyToPinkTranslatorFunctionPlugin extends AbstractPlugin implements Gener
     {
         return GreyToPink::class;
     }
- 
+
     /**
      * @param mixed $value
      * @param array $payload
@@ -334,9 +335,9 @@ With a set of standard plugins, we have everything together and make it availabl
 
 src/Pyz/Zed/AntelopeMiddlewareConnector/AntelopeMiddlewareConnectorDependencyProvider.php
 <?php
- 
+
 namespace Pyz\Zed\AntelopeMiddlewareConnector;
- 
+
 use Spryker\Zed\Kernel\AbstractBundleDependencyProvider;
 use Spryker\Zed\Kernel\Container;
 + use Pyz\Zed\AntelopeMiddlewareConnector\Communication\Plugin\AntelopeTranslationStagePlugin;
@@ -346,16 +347,16 @@ use Spryker\Zed\Kernel\Container;
 + use SprykerMiddleware\Zed\Process\Communication\Plugin\Stream\JsonRowOutputStreamPlugin;
 + use SprykerMiddleware\Zed\Process\Communication\Plugin\StreamReaderStagePlugin;
 + use SprykerMiddleware\Zed\Process\Communication\Plugin\StreamWriterStagePlugin;
- 
+
 class AntelopeMiddlewareConnectorDependencyProvider extends AbstractBundleDependencyProvider
 {
-+    public const ANTELOPE_INPUT_STREAM_PLUGIN = 'ANTELOPE_INPUT_STREAM_PLUGIN';
-+    public const ANTELOPE_OUTPUT_STREAM_PLUGIN = 'ANTELOPE_OUTPUT_STREAM_PLUGIN';
-+    public const ANTELOPE_ITERATOR_PLUGIN = 'ANTELOPE_ITERATOR_PLUGIN';
-+    public const ANTELOPE_STAGE_PLUGIN_STACK = 'ANTELOPE_STAGE_PLUGIN_STACK';
-+    public const ANTELOPE_LOGGER_PLUGIN = 'ANTELOPE_LOGGER_PLUGIN';
++ public const ANTELOPE_INPUT_STREAM_PLUGIN = 'ANTELOPE_INPUT_STREAM_PLUGIN';
++ public const ANTELOPE_OUTPUT_STREAM_PLUGIN = 'ANTELOPE_OUTPUT_STREAM_PLUGIN';
++ public const ANTELOPE_ITERATOR_PLUGIN = 'ANTELOPE_ITERATOR_PLUGIN';
++ public const ANTELOPE_STAGE_PLUGIN_STACK = 'ANTELOPE_STAGE_PLUGIN_STACK';
++ public const ANTELOPE_LOGGER_PLUGIN = 'ANTELOPE_LOGGER_PLUGIN';
     public const FACADE_PROCESS = 'FACADE_PROCESS';
- 
+
     /**
      * @param \Spryker\Zed\Kernel\Container $container
      *
@@ -364,11 +365,11 @@ class AntelopeMiddlewareConnectorDependencyProvider extends AbstractBundleDepend
     public function provideCommunicationLayerDependencies(Container $container): Container
     {
         $container = $this->addFacadeProcess($container);
-+        $container = $this->addAntelopeTransformationProcessPlugins($container);
- 
++ $container = $this->addAntelopeTransformationProcessPlugins($container);
+
         return $container;
     }
- 
+
     /**
      * @param \Spryker\Zed\Kernel\Container $container
      *
@@ -381,42 +382,42 @@ class AntelopeMiddlewareConnectorDependencyProvider extends AbstractBundleDepend
         };
         return $container;
     }
- 
-+    /**
-+     * @param \Spryker\Zed\Kernel\Container $container
-+     *
-+     * @return \Spryker\Zed\Kernel\Container
-+     */
-+    protected function addAntelopeTransformationProcessPlugins(Container $container): Container
-+    {
-+        $container[static::ANTELOPE_INPUT_STREAM_PLUGIN] = function () {
-+            return new JsonRowInputStreamPlugin();
-+        };
-+        $container[static::ANTELOPE_OUTPUT_STREAM_PLUGIN] = function () {
-+            return new JsonRowOutputStreamPlugin();
-+        };
-+        $container[static::ANTELOPE_ITERATOR_PLUGIN] = function () {
-+            return new NullIteratorPlugin();
-+        };
-+        $container[static::ANTELOPE_STAGE_PLUGIN_STACK] = function () {
-+            return [
-+                new StreamReaderStagePlugin(),
-+                new AntelopeTranslationStagePlugin(),
-+                new StreamWriterStagePlugin(),
-+            ];
-+        };
-+        $container[static::ANTELOPE_LOGGER_PLUGIN] = function () {
-+            return new MiddlewareLoggerConfigPlugin();
-+        };
-+ 
-+        return $container;
-+    }
+
++ /**
++ * @param \Spryker\Zed\Kernel\Container $container
++ *
++ * @return \Spryker\Zed\Kernel\Container
++ */
++ protected function addAntelopeTransformationProcessPlugins(Container $container): Container
++ {
++ $container[static::ANTELOPE_INPUT_STREAM_PLUGIN] = function () {
++ return new JsonRowInputStreamPlugin();
++ };
++ $container[static::ANTELOPE_OUTPUT_STREAM_PLUGIN] = function () {
++ return new JsonRowOutputStreamPlugin();
++ };
++ $container[static::ANTELOPE_ITERATOR_PLUGIN] = function () {
++ return new NullIteratorPlugin();
++ };
++ $container[static::ANTELOPE_STAGE_PLUGIN_STACK] = function () {
++ return [
++ new StreamReaderStagePlugin(),
++ new AntelopeTranslationStagePlugin(),
++ new StreamWriterStagePlugin(),
++ ];
++ };
++ $container[static::ANTELOPE_LOGGER_PLUGIN] = function () {
++ return new MiddlewareLoggerConfigPlugin();
++ };
++
++ return $container;
++ }
 }
 src/Pyz/Zed/AntelopeMiddlewareConnector/Communication/AntelopeMiddlewareConnectorCommunicationFactory.php
 <?php
- 
+
 namespace Pyz\Zed\AntelopeMiddlewareConnector\Communication;
- 
+
 use Pyz\Zed\AntelopeMiddlewareConnector\AntelopeMiddlewareConnectorDependencyProvider;
 use Spryker\Zed\Kernel\Communication\AbstractCommunicationFactory;
 use SprykerMiddleware\Zed\Process\Business\ProcessFacadeInterface;
@@ -427,38 +428,38 @@ use SprykerMiddleware\Zed\Process\Business\ProcessFacadeInterface;
 + use SprykerMiddleware\Zed\Process\Dependency\Plugin\StagePluginInterface;
 + use SprykerMiddleware\Zed\Process\Dependency\Plugin\Stream\InputStreamPluginInterface;
 + use SprykerMiddleware\Zed\Process\Dependency\Plugin\Stream\OutputStreamPluginInterface;
- 
+
 class AntelopeMiddlewareConnectorCommunicationFactory extends AbstractCommunicationFactory
 {
 
-+    public function getAntelopeInputStreamPlugin(): InputStreamPluginInterface
-+    {
-+        return $this->getProvidedDependency(AntelopeMiddlewareConnectorDependencyProvider::ANTELOPE_INPUT_STREAM_PLUGIN);
-+    }
-+ 
-+    public function getAntelopeOutputStreamPlugin(): OutputStreamPluginInterface
-+    {
-+        return $this->getProvidedDependency(AntelopeMiddlewareConnectorDependencyProvider::ANTELOPE_OUTPUT_STREAM_PLUGIN);
-+    }
-+ 
-+    public function getAntelopeIteratorPlugin(): ProcessIteratorPluginInterface
-+    {
-+        return $this->getProvidedDependency(AntelopeMiddlewareConnectorDependencyProvider::ANTELOPE_ITERATOR_PLUGIN);
-+    }
-+ 
-+    public function getAntelopeLoggerConfigPlugin(): MiddlewareLoggerConfigPluginInterface
-+    {
-+        return $this->getProvidedDependency(AntelopeMiddlewareConnectorDependencyProvider::ANTELOPE_LOGGER_PLUGIN);
-+    }
-+ 
-+    /**
-+     * @return StagePluginInterface[]
-+     */
-+    public function getAntelopeStagePluginStack(): array
-+    {
-+        return $this->getProvidedDependency(AntelopeMiddlewareConnectorDependencyProvider::ANTELOPE_STAGE_PLUGIN_STACK);
-+    }
- 
++ public function getAntelopeInputStreamPlugin(): InputStreamPluginInterface
++ {
++ return $this->getProvidedDependency(AntelopeMiddlewareConnectorDependencyProvider::ANTELOPE_INPUT_STREAM_PLUGIN);
++ }
++
++ public function getAntelopeOutputStreamPlugin(): OutputStreamPluginInterface
++ {
++ return $this->getProvidedDependency(AntelopeMiddlewareConnectorDependencyProvider::ANTELOPE_OUTPUT_STREAM_PLUGIN);
++ }
++
++ public function getAntelopeIteratorPlugin(): ProcessIteratorPluginInterface
++ {
++ return $this->getProvidedDependency(AntelopeMiddlewareConnectorDependencyProvider::ANTELOPE_ITERATOR_PLUGIN);
++ }
++
++ public function getAntelopeLoggerConfigPlugin(): MiddlewareLoggerConfigPluginInterface
++ {
++ return $this->getProvidedDependency(AntelopeMiddlewareConnectorDependencyProvider::ANTELOPE_LOGGER_PLUGIN);
++ }
++
++ /**
++ * @return StagePluginInterface[]
++ */
++ public function getAntelopeStagePluginStack(): array
++ {
++ return $this->getProvidedDependency(AntelopeMiddlewareConnectorDependencyProvider::ANTELOPE_STAGE_PLUGIN_STACK);
++ }
+
     public function getProcessFacade(): ProcessFacadeInterface
     {
         return $this->getProvidedDependency(AntelopeMiddlewareConnectorDependencyProvider::FACADE_PROCESS);
@@ -466,23 +467,23 @@ class AntelopeMiddlewareConnectorCommunicationFactory extends AbstractCommunicat
 }
 src/Pyz/Zed/AntelopeMiddlewareConnector/Communication/Plugin/Configuration/AntelopeTransformationProcessPlugin.php
 <?php
- 
+
 namespace Pyz\Zed\AntelopeMiddlewareConnector\Communication\Plugin\Configuration;
- 
+
 use Spryker\Zed\Kernel\Communication\AbstractPlugin;
 use SprykerMiddleware\Zed\Process\Dependency\Plugin\Configuration\ProcessConfigurationPluginInterface;
 use SprykerMiddleware\Zed\Process\Dependency\Plugin\Iterator\ProcessIteratorPluginInterface;
 use SprykerMiddleware\Zed\Process\Dependency\Plugin\Log\MiddlewareLoggerConfigPluginInterface;
 use SprykerMiddleware\Zed\Process\Dependency\Plugin\Stream\InputStreamPluginInterface;
 use SprykerMiddleware\Zed\Process\Dependency\Plugin\Stream\OutputStreamPluginInterface;
- 
+
 /**
  * @method \Pyz\Zed\AntelopeMiddlewareConnector\Communication\AntelopeMiddlewareConnectorCommunicationFactory getFactory()
  */
 class AntelopeTransformationProcessPlugin extends AbstractPlugin implements ProcessConfigurationPluginInterface
 {
     protected const PROCESS_NAME = 'ANTELOPE_PROCESS';
- 
+
     /**
      * @return string
      */
@@ -490,7 +491,7 @@ class AntelopeTransformationProcessPlugin extends AbstractPlugin implements Proc
     {
         return static::PROCESS_NAME;
     }
- 
+
     /**
      * @return \SprykerMiddleware\Zed\Process\Dependency\Plugin\Stream\InputStreamPluginInterface
      */
@@ -499,7 +500,7 @@ class AntelopeTransformationProcessPlugin extends AbstractPlugin implements Proc
         return $this->getFactory()
             ->getAntelopeInputStreamPlugin();
     }
- 
+
     /**
      * @return \SprykerMiddleware\Zed\Process\Dependency\Plugin\Stream\OutputStreamPluginInterface
      */
@@ -508,7 +509,7 @@ class AntelopeTransformationProcessPlugin extends AbstractPlugin implements Proc
         return $this->getFactory()
             ->getAntelopeOutputStreamPlugin();
     }
- 
+
     /**
      * @return \SprykerMiddleware\Zed\Process\Dependency\Plugin\Iterator\ProcessIteratorPluginInterface
      */
@@ -517,7 +518,7 @@ class AntelopeTransformationProcessPlugin extends AbstractPlugin implements Proc
         return $this->getFactory()
             ->getAntelopeIteratorPlugin();
     }
- 
+
     /**
      * @return \SprykerMiddleware\Zed\Process\Dependency\Plugin\StagePluginInterface[]
      */
@@ -526,7 +527,7 @@ class AntelopeTransformationProcessPlugin extends AbstractPlugin implements Proc
         return $this->getFactory()
             ->getAntelopeStagePluginStack();
     }
- 
+
     /**
      * @return \SprykerMiddleware\Zed\Process\Dependency\Plugin\Log\MiddlewareLoggerConfigPluginInterface
      */
@@ -535,7 +536,7 @@ class AntelopeTransformationProcessPlugin extends AbstractPlugin implements Proc
         return $this->getFactory()
             ->getAntelopeLoggerConfigPlugin();
     }
- 
+
     /**
      * @return \SprykerMiddleware\Zed\Process\Dependency\Plugin\Hook\PreProcessorHookPluginInterface[]
      */
@@ -543,7 +544,7 @@ class AntelopeTransformationProcessPlugin extends AbstractPlugin implements Proc
     {
         return [];
     }
- 
+
     /**
      * @return \SprykerMiddleware\Zed\Process\Dependency\Plugin\Hook\PostProcessorHookPluginInterface[]
      */
@@ -556,19 +557,19 @@ This process, together with our translator function, we now make available in a 
 
 src/Pyz/Zed/AntelopeMiddlewareConnector/AntelopeMiddlewareConnectorDependencyProvider.php
 <?php
- 
+
 namespace Pyz\Zed\AntelopeMiddlewareConnector;
- 
+
 + use Pyz\Zed\AntelopeMiddlewareConnector\Communication\Plugin\AntelopeTranslationStagePlugin;
 + use Pyz\Zed\AntelopeMiddlewareConnector\Communication\Plugin\Configuration\AntelopeTransformationProcessPlugin;
 //...
- 
+
 class AntelopeMiddlewareConnectorDependencyProvider extends AbstractBundleDependencyProvider
 {
-+    public const ANTELOPE_TRANSLATOR_FUNCTIONS = 'ANTELOPE_MIDDLEWARE_TRANSLATOR_FUNCTIONS';
-+    public const ANTELOPE_PROCESSES = 'ANTELOPE_MIDDLEWARE_PROCESSES';
++ public const ANTELOPE_TRANSLATOR_FUNCTIONS = 'ANTELOPE_MIDDLEWARE_TRANSLATOR_FUNCTIONS';
++ public const ANTELOPE_PROCESSES = 'ANTELOPE_MIDDLEWARE_PROCESSES';
     //...
- 
+
     /**
      * @param \Spryker\Zed\Kernel\Container $container
      *
@@ -577,97 +578,97 @@ class AntelopeMiddlewareConnectorDependencyProvider extends AbstractBundleDepend
     public function provideCommunicationLayerDependencies(Container $container): Container
     {
         //...
-+        $container = $this->addAntelopeProcesses($container);
-+        $container = $this->addAntelopeTranslatorFunctionsPlugins($container);
- 
++ $container = $this->addAntelopeProcesses($container);
++ $container = $this->addAntelopeTranslatorFunctionsPlugins($container);
+
         return $container;
     }
- 
+
     //...
- 
-+    /**
-+     * @param \Spryker\Zed\Kernel\Container $container
-+     *
-+     * @return \Spryker\Zed\Kernel\Container
-+     */
-+    protected function addAntelopeTranslatorFunctionsPlugins($container): Container
-+    {
-+        $container[static::ANTELOPE_TRANSLATOR_FUNCTIONS] = function () {
-+            return $this->getAntelopeTranslatorFunctionPlugins();
-+        };
-+        return $container;
-+    }
+
++ /**
++ * @param \Spryker\Zed\Kernel\Container $container
++ *
++ * @return \Spryker\Zed\Kernel\Container
++ */
++ protected function addAntelopeTranslatorFunctionsPlugins($container): Container
++ {
++ $container[static::ANTELOPE_TRANSLATOR_FUNCTIONS] = function () {
++ return $this->getAntelopeTranslatorFunctionPlugins();
++ };
++ return $container;
++ }
 +
-+    /**
-+     * @return \SprykerMiddleware\Zed\Process\Dependency\Plugin\Validator\GenericValidatorPluginInterface[]
-+     */
-+    public function getAntelopeTranslatorFunctionPlugins(): array
-+    {
-+        return [
-+            new GreyToPinkTranslatorFunctionPlugin(),
-+        ];
-+    }
- 
-+    /**
-+     * @param \Spryker\Zed\Kernel\Container $container
-+     *
-+     * @return \Spryker\Zed\Kernel\Container
-+     */
-+    protected function addAntelopeProcesses(Container $container): Container
-+    {
-+        $container[static::ANTELOPE_PROCESSES] = function () {
-+            return $this->getAntelopeProcesses();
-+        };
-+        return $container;
-+    }
-+ 
-+    /**
-+     * @return \SprykerMiddleware\Zed\Process\Dependency\Plugin\Configuration\ProcessConfigurationPluginInterface[]
-+     */
-+    protected function getAntelopeProcesses(): array
-+    {
-+        return [
-+            new AntelopeTransformationProcessPlugin(),
-+        ];
-+    }
++ /**
++ * @return \SprykerMiddleware\Zed\Process\Dependency\Plugin\Validator\GenericValidatorPluginInterface[]
++ */
++ public function getAntelopeTranslatorFunctionPlugins(): array
++ {
++ return [
++ new GreyToPinkTranslatorFunctionPlugin(),
++ ];
++ }
+
++ /**
++ * @param \Spryker\Zed\Kernel\Container $container
++ *
++ * @return \Spryker\Zed\Kernel\Container
++ */
++ protected function addAntelopeProcesses(Container $container): Container
++ {
++ $container[static::ANTELOPE_PROCESSES] = function () {
++ return $this->getAntelopeProcesses();
++ };
++ return $container;
++ }
++
++ /**
++ * @return \SprykerMiddleware\Zed\Process\Dependency\Plugin\Configuration\ProcessConfigurationPluginInterface[]
++ */
++ protected function getAntelopeProcesses(): array
++ {
++ return [
++ new AntelopeTransformationProcessPlugin(),
++ ];
++ }
 }
 src/Pyz/Zed/AntelopeMiddlewareConnector/Communication/AntelopeMiddlewareConnectorCommunicationFactory.php
 <?php
- 
+
 namespace Pyz\Zed\AntelopeMiddlewareConnector\Communication;
 
 + use SprykerMiddleware\Zed\Process\Business\Translator\TranslatorFunction\TranslatorFunctionInterface;
 + use SprykerMiddleware\Zed\Process\Dependency\Plugin\Configuration\ProcessConfigurationPluginInterface;
 //...
- 
+
 class AntelopeMiddlewareConnectorCommunicationFactory extends AbstractCommunicationFactory
 {
     //...
 
-+    /**
-+     * @return TranslatorFunctionInterface[]
-+     */
-+    public function getAntelopeTranslatorFunctions(): array
-+    {
-+        return $this->getProvidedDependency(AntelopeMiddlewareConnectorDependencyProvider::ANTELOPE_TRANSLATOR_FUNCTIONS);
-+    }
++ /**
++ * @return TranslatorFunctionInterface[]
++ */
++ public function getAntelopeTranslatorFunctions(): array
++ {
++ return $this->getProvidedDependency(AntelopeMiddlewareConnectorDependencyProvider::ANTELOPE_TRANSLATOR_FUNCTIONS);
++ }
 +
-+    /**
-+     * @return ProcessConfigurationPluginInterface[]
-+     */
-+    public function getAntelopeProcesses(): array
-+    {
-+        return $this->getProvidedDependency(AntelopeMiddlewareConnectorDependencyProvider::ANTELOPE_PROCESSES);
-+    }
++ /**
++ * @return ProcessConfigurationPluginInterface[]
++ */
++ public function getAntelopeProcesses(): array
++ {
++ return $this->getProvidedDependency(AntelopeMiddlewareConnectorDependencyProvider::ANTELOPE_PROCESSES);
++ }
 }
 src/Pyz/Zed/AntelopeMiddlewareConnector/Communication/Plugin/Configuration/AntelopeMiddlewareConnectorConfigurationProfilePlugin.php
 <?php
- 
+
 namespace Pyz\Zed\AntelopeMiddlewareConnector\Communication\Plugin\Configuration;
- 
+
 use Spryker\Zed\Kernel\Communication\AbstractPlugin;
 use SprykerMiddleware\Zed\Process\Dependency\Plugin\Configuration\ConfigurationProfilePluginInterface;
- 
+
 /**
  * @method \Pyz\Zed\AntelopeMiddlewareConnector\Communication\AntelopeMiddlewareConnectorCommunicationFactory getFactory()
  * @method \Pyz\Zed\AntelopeMiddlewareConnector\Business\AntelopeMiddlewareConnectorFacadeInterface getFacade()
@@ -682,7 +683,7 @@ class AntelopeMiddlewareConnectorConfigurationProfilePlugin extends AbstractPlug
         return $this->getFactory()
             ->getAntelopeProcesses();
     }
- 
+
     /**
      * @return \SprykerMiddleware\Zed\Process\Dependency\Plugin\TranslatorFunction\TranslatorFunctionPluginInterface[]
      */
@@ -691,7 +692,7 @@ class AntelopeMiddlewareConnectorConfigurationProfilePlugin extends AbstractPlug
         return $this->getFactory()
             ->getAntelopeTranslatorFunctions();
     }
- 
+
     /**
      * @return \SprykerMiddleware\Zed\Process\Dependency\Plugin\Validator\ValidatorPluginInterface[]
      */
@@ -704,12 +705,12 @@ which we then register in the Middleware’s Process module
 
 src/Pyz/Zed/Process/ProcessDependencyProvider.php
 <?php
- 
+
 namespace Pyz\Zed\Process;
- 
+
 use Pyz\Zed\AntelopeMiddlewareConnector\Communication\Plugin\Configuration\AntelopeMiddlewareConnectorConfigurationProfilePlugin;
 use SprykerMiddleware\Zed\Process\ProcessDependencyProvider as SprykerProcessDependencyProvider;
- 
+
 class ProcessDependencyProvider extends SprykerProcessDependencyProvider
 {
     /**

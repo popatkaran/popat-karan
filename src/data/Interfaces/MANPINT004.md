@@ -4,6 +4,7 @@ date: "2024-01-17"
 title: "MANPINT004 - Import Product Prices by Country"
 description: "manpint001"
 category: "interfaces"
+category_key: 'interfaces'
 type: "professional"
 image: '../../images/api-interface.png'
 order: 7

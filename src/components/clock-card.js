@@ -8,13 +8,13 @@ export default function ClockCard({ city }) {
       <div className="card-big-shadow">
         <div className="card">
           <div className="content">
-            <h1>{city.title}</h1>
-            <Clock
+            <h6>{city.title}</h6>
+            <h3><Clock
               format={"dddd, MMMM Do YYYY, HH:mm:ss"}
               ticking={true}
               // timezone={city.timezone}
               className="gb-clock"
-            />
+            /></h3>
           </div>
         </div>
       </div>

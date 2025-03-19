@@ -3,6 +3,7 @@ slug: "/spryker/training/pub-sync"
 date: "2019-05-04"
 title: "Publish & Synchronization"
 category: "spryker"
+category_key: 'spryker'
 type: "professional"
 image: '../../../images/platforms/banner-spryker.png'
 order: 997
@@ -10,7 +11,7 @@ order: 997
 
 ## Objective
 
-In order to synchronize magazine reviews to the storefront, we have to connect it to our Publish&Synchronize infrastructure. Modules responsible for P&S should be outside of the actual base module. The should be in *Storage or *Search modules.
+In order to synchronize magazine reviews to the storefront, we have to connect it to our Publish&Synchronize infrastructure. Modules responsible for P&S should be outside of the actual base module. The should be in *Storage or*Search modules.
 
 First of all we have to make the system listen for changes of our entities. Add the according behaviour to the existing schema definitions in the Antelope module.
 
@@ -22,18 +23,18 @@ src/Pyz/Zed/Antelope/Persistence/Propel/Schema/pyz_antelope.schema.xml
 
 <table name="pyz_antelope" ...>
     ...
-+    <behavior name="event">
-+        <parameter name="pyz_antelope_all" column="*"/>
-+    </behavior>
++ <behavior name="event">
++ <parameter name="pyz_antelope_all" column="*"/>
++ </behavior>
 </table>
 And let the system know about our entity lifecycle events
 
 src/Pyz/Zed/Antelope/Dependency/AntelopeEvents.php
 
 <?php
- 
+
 namespace Pyz\Zed\Antelope\Dependency;
- 
+
 interface AntelopeEvents
 {
     public const ENTITY_PYZ_ANTELOPE_CREATE = 'Entity.pyz_antelope.create';
@@ -240,30 +241,30 @@ The EventSubscriber should be added to the according collection in the EventDepe
 
 src/Pyz/Zed/Event/EventDependencyProvider.php
 <?php
- 
+
 namespace Pyz\Zed\Event;
- 
+
 + use Pyz\Zed\AntelopeSearch\Communication\Plugin\Event\Subscriber\AntelopeSearchEventSubscriber;
 //...
- 
+
 class EventDependencyProvider extends SprykerEventDependencyProvider
 {
     //...
- 
+
     /**
      * @return \Spryker\Zed\Event\Dependency\EventSubscriberCollectionInterface
      */
     public function getEventSubscriberCollection()
     {
         $eventSubscriberCollection = parent::getEventSubscriberCollection();
- 
+
         //...
- 
+
         /**
          * Search Events
          */
         //...
-+        $eventSubscriberCollection->add(new AntelopeSearchEventSubscriber());
++ $eventSubscriberCollection->add(new AntelopeSearchEventSubscriber());
 Then, we have to configure RabbitMQ with the queues we actually want to talk to:
 
 src/Pyz/Client/RabbitMq/RabbitMqConfig.php
@@ -280,18 +281,18 @@ class RabbitMqConfig extends SprykerRabbitMqConfig
     {
         return [
             //...
-+            'sync.search.antelope',
++ 'sync.search.antelope',
         ];
     }
 And tell the Queue module, that messages in this queue should be piped through the search synchronization.
 
 src/Pyz/Zed/Queue/QueueDependencyProvider.php
 <?php
- 
+
 namespace Pyz\Zed\Queue;
- 
+
 //...
- 
+
 class QueueDependencyProvider extends SprykerDependencyProvider
 {
     /**
@@ -303,28 +304,28 @@ class QueueDependencyProvider extends SprykerDependencyProvider
     {
         return [
             ///...
-+            'sync.search.antelope' => new SynchronizationSearchQueueMessageProcessorPlugin(),
++ 'sync.search.antelope' => new SynchronizationSearchQueueMessageProcessorPlugin(),
         ];
 Lastly, emit the creation event in your Antelope DataImporter.
 
 src/Pyz/Zed/DataImport/Business/Model/Antelope/AntelopeWriterStep.php
 <?php
- 
+
 namespace Pyz\Zed\DataImport\Business\Model\Antelope;
- 
+
 + use Pyz\Zed\Antelope\Dependency\AntelopeEvents;
 + use Spryker\Zed\DataImport\Business\Model\DataImportStep\PublishAwareStep;
 //...
- 
+
 - class AntelopeWriterStep implements DataImportStepInterface
 + class AntelopeWriterStep extends PublishAwareStep implements DataImportStepInterface
 {
     //...
- 
+
     public function execute(DataSetInterface $dataSet)
     {
         //...
-+        $this->addPublishEvents(AntelopeEvents::ENTITY_PYZ_ANTELOPE_CREATE, $antelopeEntity->getIdAntelope());
++ $this->addPublishEvents(AntelopeEvents::ENTITY_PYZ_ANTELOPE_CREATE, $antelopeEntity->getIdAntelope());
     }
 }
 Now, run the data import again. You can see in Elasticsearch, that our Antelopes are now available to the frontend applications. In the next task we will see how we can achieve that!

@@ -3,6 +3,7 @@ slug: "/spryker/training/zed-ui"
 date: "2019-05-04"
 title: "Zed UI"
 category: "spryker"
+category_key: 'spryker'
 type: "professional"
 image: '../../../images/platforms/banner-spryker.png'
 order: 999
@@ -338,7 +339,7 @@ interface AntelopeRepositoryInterface
    *
    * @return \Generated\Shared\Transfer\AntelopeTransfer|null
    */
-  public function findAntelopeById(int $idAntelope): ?AntelopeTransfer; 
+  public function findAntelopeById(int $idAntelope): ?AntelopeTransfer;
 }
 src/Pyz/Zed/Antelope/Persistence/AntelopeRepository.php
 <?php
@@ -618,12 +619,12 @@ config/Zed/navigation.xml
 <?xml version="1.0"?>
 <config>
 <!-- You can control navigation order here and add your custom navigation entries -->
-+    <antelope>
-+        <label>Antelope</label>
-+        <title>Antelope</title>
-+        <uri>/antelope</uri>
-+        <icon>fa-globe</icon>
-+    </antelope>
++ <antelope>
++ <label>Antelope</label>
++ <title>Antelope</title>
++ <uri>/antelope</uri>
++ <icon>fa-globe</icon>
++ </antelope>
 ...
 </config>
 and run console navigation:build-cache to include it in Zed's menu.

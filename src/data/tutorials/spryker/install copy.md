@@ -3,6 +3,7 @@ slug: '/blog/spryker/install-general'
 date: '2021-11-23'
 title: 'Spryker installation All'
 category: "spryker"
+category_key: 'spryker'
 tags: ['spryker', 'installation', 'karan', 'karan popat', 'popatkaran']
 type: 'professional'
 image: '../../../images/platforms/banner-spryker.png'
@@ -40,15 +41,19 @@ order: 1
   ```
 
 - Increase a default memory for WSL2 by creating .wslconfig file in user profile location
+
   ```
   notepad "$env:USERPROFILE/.wslconfig"
   ```
+
   - Content of a config may look for example like this
+
     ```
     [wsl2]
     memory=8GB # Limits VM memory in WSL 2 up to 8GB
     processors=4 # Makes the WSL 2 VM use 4 virtual processors
     ```
+
 - Login to Ubuntu:
 
   ```
@@ -56,10 +61,13 @@ order: 1
   ```
 
 - create /etc/wsl.conf, e.g.:
+
   ```
   sudo nano /etc/wsl.conf
   ```
+
   - add following content:
+
     ```
     # Enable extra metadata options by default
     [automount]
@@ -67,17 +75,23 @@ order: 1
     root = / options = "metadata,umask=22,fmask=11"
     mountFsTab = false
     ```
+
 - Now, exit from Ubuntu, terminate it and start again:
+
   ```
   wsl -t Ubuntu-20.04
   wsl -d Ubuntu-20.04
   ```
+
 - Docker installation
   - Login to WSL2 Ubuntu instance via PowerShell or your favourite terminal
+
   ```
   wsl -d Ubuntu-20.04
   ```
+
   - Update and install necessary tools
+
   ```
   sudo apt update && sudo apt dist-upgrade
   sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
@@ -91,21 +105,29 @@ order: 1
   echo "export DOCKER_HOST=tcp://localhost:2375" >> ~/.bashrc
   export DOCKER_HOST=tcp://localhost:2375
   ```
+
   - check docker version
+
   ```
   docker version
   ```
+
 - Spryker installation
 
   - Login to WSL2 Ubuntu instance via PowerShell as administration
+
     ```
     wsl -d Ubuntu-20.04
     ```
+
   - Make sure docker is running
+
     ```
     sudo service docker status
     ```
+
   - Copy your id_rsa SSH keys to /home/spryker/.ssh/ folder and make sure to set proper permissions. E.g.:
+
     ```
     mkdir /home/spryker/.ssh
     cp /c/Users/karan.popat/.ssh/id_rsa /home/spryker/.ssh/
@@ -114,6 +136,7 @@ order: 1
     chmod 0600 /home/spryker/.ssh/id_rsa
     chmod 0700 /home/spryker/.ssh
     ```
+
   - Clone project repository into your home directory. Then, clone Socker SDK into it.
 
     ```
@@ -222,19 +245,25 @@ Create a new PHP Empry Project and select WSL as location, e.g:
 
 - Clone repository:
   - B2B Shop
+
     ```
     git clone https://github.com/spryker-shop/b2b-demo-shop.git -b 202108.0 --single-branch ./b2b-demo-shop
     ```
+
   - B2C Shop
+
     ```
     git clone https://github.com/spryker-shop/b2c-demo-shop.git -b 202108.0 --single-branch ./b2b-demo-shop
     ```
+
 - navigate inside the shop directory
+
   ```
   cd b2b-demo-shop
   ...
   cd b2c-demo-shop
   ```
+
 - Clone the Docker SDK repository
 
   ```
@@ -247,18 +276,25 @@ Create a new PHP Empry Project and select WSL as location, e.g:
   ```
 
 - Add your user to the docker group
+
   ```
   sudo usermod -aG docker $USER
   ```
+
 - Bootstrap local docker setup
+
   ```
   docker/sdk bootstrap deploy.dev.yml
   ```
+
 - update hosts file
+
   ```
    sudo bash -c "echo '127.0.0.1 backend-api.at.spryker.local backend-api.de.spryker.local backend-api.us.spryker.local backend-gateway.at.spryker.local backend-gateway.de.spryker.local backend-gateway.us.spryker.local backoffice.at.spryker.local backoffice.de.spryker.local glue.at.spryker.local glue.de.spryker.local glue.us.spryker.local mail.spryker.local queue.spryker.local redis-commander.spryker.local scheduler.spryker.local spryker.local swagger.spryker.local yves.at.spryker.local yves.de.spryker.local yves.us.spryker.local zed.us.spryker.local' >> /etc/hosts"
   ```
+
 - build and start the instance
+
   ```
   docker/sdk up
   ```

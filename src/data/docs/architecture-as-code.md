@@ -1,8 +1,9 @@
 ---
-slug: '/notes/architecture-as-code'
+slug: '/article/architecture-as-code'
 date: '2023-02-16'
 title: 'Architecture as code'
-category: 'software_architecture'
+category: 'Software Architecture'
+category_key: 'software_architecture'
 type: 'professional'
 image: '../../images/software-architecture.png'
 order: 0
